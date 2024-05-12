@@ -1,0 +1,31 @@
+{% extends 'base_vip.html' %}
+{% load static %}
+
+
+{% block title %}
+    Espacio VIP - Edalom
+{% endblock %}
+
+
+{% block header %}
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Libro Dinámico</h1>
+        <i><p class="header-subtitle">Esta es la sección dedicada al libro dinámico del momento</p></i>
+        <i><p class="header-subtitle">El libro dinámico es mi sección preferida, porque aquí voy publicando un capítulo por semana de la historia que estoy escribiendo. Por un euro/dolar al mes, tendrás acceso a la historia antes que nadie. Cuando el libro dinámico esté terminado, y tras unos posibles retoques, srá publicado, y empezaré a escribir otro libro dinámico en esta sección.</p></i>
+        <!-- <button class="btn btn-theme-color modal-toggle"><i class="ti-control-play text-danger"></i> Watch Video</button> -->
+    </div>
+    <script src="{% static 'js/subtitleRandom.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+    <div class="container page-container">
+        <div class="col-md-10 col-lg-8 m-auto">
+            <h6 class="title mb-4">La Leyenda de Alden Debald</h6>
+            <p class="mb-5">Alden Debald nos narra su historia.</p>
+        </div>
+    </div> 
+{% endblock %}
+
+

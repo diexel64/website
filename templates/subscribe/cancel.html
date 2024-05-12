@@ -1,0 +1,21 @@
+{% extends 'base_vip.html' %}
+{% load static %}
+
+{% block title %}
+    Pago completado - Edalom
+{% endblock %}
+
+{% block header %}
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Pago incompleto</h1>
+        <i><p class="header-subtitle">Algo ha salido mal :(</p></i>
+        <a href="{% url 'mi_cuenta' %}">
+            <button class="btn btn-theme-color modal-toggle"></i>Mi Cuenta</button>
+        </a>
+
+    </div>
+{% endblock %}
+
+{% block content %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base_vip.html' %}
+{% load static %}
+
+{% block title %}
+    Pago completado - Edalom
+{% endblock %}
+
+{% block header %}
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Pago completado con éxito</h1>
+        <i><p class="header-subtitle">Disfruta del libro dinámico :)</p></i>
+        <a href="{% url 'libro_dinamico' %}">
+            <button class="btn btn-theme-color modal-toggle"></i>Libro Dinámico</button>
+        </a>
+
+    </div>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
