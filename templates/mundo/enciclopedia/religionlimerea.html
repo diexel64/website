@@ -1,10 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base_articulo.html' %}
+{% load static %}
+
+
+{% block title %}
+    Religión Limerea - Enciclopedia
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/edalom/pento1.jpeg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/edalom/pento1.jpeg' %});
+    }
+    .justify {
+        text-align: justify;
+    }
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Religión Limerea</h1>
+        <i><p class="header-subtitle">Al principio de todo, los humanos rendían culto a Akros en los templos jorolitas que el propio Dios creador ayudó a diseñar, como el de Kitazh. Con el tiempo, y en los lugares alejados de dichos templos, la gente empezó a creer en los espíritus que albergaban las creaciones de Akros. Así surgió el animismo, como segunda religión, que resistió al paso del tiempo únicamente en los Mil Reinos y en el Khaz’Tiber. Con la Gran Rebelión, no solo fueron borrados del mapa los heterocromos, sino también sus creencias (aunque también fueran las de los humanos), pues se presentaron como unas creencias impuestas durante siglos. La religión jorolita era la del opresor, de modo que para Sahelia, manipuladora de la verdad, fue fácil modificar ciertos detalles y crear así la religión limerea. Existen más religiones, aunque marginales, como la que adoptaron los adeptos de la Luna en Mareas Rotas, los seguidores de Seth en el desierto, o los eruditos de la Forja Negra.</p></i>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+        <section id="origentiempo" class="justify">
+            <h1 class="title">Historia</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>La religión limerea ha ganado numerosos seguidores desde el cisma que supuso la Gran Rebelión y la triple traición de Kitazh. Sahelia, manipulando la verdad gracias a su poder, fue la arquitecta principal, aunque concurrieron más circunstancias.</p>
+                <p>Fue una guerra que no perdonó a nadie, que dejó a innumerables familias en la más honda pobreza. Los monasterios limereos se desarrollaron con el beneplácito de los nuevos monarcas que necesitaban una religión alternativa. Estos ofrecían techo y pan para los hijos cuyas familias no podían cuidar. Conque, de la manera más natural, toda familia mandaba a al menos un hijo a la Iglesia Limerea. Así, el nuevo relato que narra el Libro de las Verdades sobre las Destructoras cobró fuerza y reemplazó a la versión original que se refería a ellas como Guardianas.</p>
+                <p>En esta versión, las guardianas son en realidad enemigas de Dios, que ya no es Akros, sino Limeres, su hermano gemelo. Este, que quiso delegar el poder para que no se perdiera, reveló el secreto a estas cinco mujeres, que rápidamente quisieron saber más. Se pusieron a practicar con el secreto y crearon desastres naturales, destruyendo todo lo que Limeres había creado en el mundo con maremotos, terremotos, incendios, tormentas y tornados. Según los limereos, las destructoras lucharon todas entre sí, tratando de descubrir los secretos que guardaba cada una. Hasta que se aliaron contra quien las creó: Limeres.</p>
+                <p>La guerra fue devastadora, pero Limeres venció y acabó con las cinco destructoras. Las cinco habían engendrado hijos, a los que Limeres perdonó la vida.</p>
+                <p>A partir de aquí, las versiones varían, pues el Libro de las Verdades no explica la razón que llevó a Limeres a perdonar a los hijos.</p>
+                <p>La mayoría (opovitas) afirma que Limeres, piadoso él, perdonó a los hijos de las destructoras para darles una segunda oportunidad. Al ver que ellos la desaprovecharon, invadiendo el continente entero y rigiendo con mano de hierro sobre los demás habitantes durante siglos, Limeres ayudó a los insurgentes. Por eso, desde la Gran Rebelión la gran mayoría cree esta historia, porque conviene creerla.</p>
+                <p>Unos pocos limereos (oponitas) creen que Limeres perdonó a los hijos de las guardianas porque estos se aliaron con él para poner fin a la guerra. Por eso, Dios los perdonó, por haberle ayudado a acabar con sus propias madres, las destructoras. Esta rama de limereos es repudiada por la mayoría, pues fueron los únicos que se opusieron a las matanzas de heterocromos. En la actualidad son discriminados totalmente.</p>
+            <br>
+
+            <h1 class="title">La Iglesia</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>La Iglesia Limerea tiene una estructura jerárquica definida por el Pontífice de Dareniel, que era el único en aquella época. Tras la Gran Rebelión, todos los monasterios e iglesias jorolitas que no habían sido destruidos fueron convertidos en edificios limereos. Esto fue el germen de la semilla de la discordia que dividiría a la Iglesia Limerea posteriormente.</p>
+                <p>Las iglesias, capillas y monasterios en Dareniel se llenaron muy rápidamente de jóvenes devotos y futuros sacerdotes y monjas. El Pontífice decidió sacarles provecho, y entonces se crearon las granjas eclesiásticas, entre otros experimentos parecidos. Pero, claro, ese modelo fue reproducido fuera de las fronteras del Norte. Si bien la producción de esas granjas y talleres estaba destinada en primer lugar para consumo local de la propia iglesia, capilla o monasterio, los excedentes pertenecían a la Iglesia Limerea, ergo al Pontífice de Dareniel.</p>
+                <p>Al primero al que le chirrió esto al enterarse fue al emperador de Suna, que fue a Dareniel a negociar tan delicado tema y volvió a su palacio con las manos vacías. Puso rumbo a Mohad, enemigo acérrimo, a explicar a los monarcas de entonces que ellos tendrían el mismo problema en cuanto la religión limerea se extendiera por el desierto. Fue una de las pocas cosas en las que se pusieron de acuerdo. Los reyes de Mohad nombraron a su propio Pontífice, así como el emperador de Suna, y Dareniel se vio obligado a acudir al Concilio de Val’Monde para aclarar el asunto. Nada se aclaró nunca, de modo que la religión limerea evolucionó durante dos siglos con una iglesia tricéfala, hasta que el tema se oficializó para que los tres Pontífices pudieran tomar decisiones conjuntas por el bien de la religión.</p>
+                <p>La estructura eclesiástica es muy jerárquica, y el ascenso es posible para cualquier devoto que trabaje bien. El Pontífice es quien interpreta las palabras del único Dios, y todos sus súbditos han de aceptarla. El Pontífice tiene hasta diez servidores por debajo, y cada uno de ellos designa a sus diez servidores a su vez. Y así sucesivamente en cada país. El Concilio de Val’Monde reúne a los tres Pontífices al menos una vez por década.</p>
+                <p>La jerarquía es la siguiente y la Iglesia mantiene un cupo limitado para cada rango: 3 pontífices; 30 limos; 300 omiles; 3 000 omiles menores; 30 000 milos. Cada milo puede tener un máximo de diez estudiantes o adeptos.</p>
+            <br>
+
+            <h1 class="title">El Libro de las Verdades</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>Los muchos siglos de dominación heterocroma habían mancillado por completo la Historia del orígen, o eso cuentan los limereos. Tras la Gran Rebelión, todos los hombres de Dios tuvieron que aunar esfuerzos para revisar y reescribir dicha historia.</p>
+                <p>El Libro de Las Verdades nos cuenta cómo Limeres diseñó un mundo perfecto y cómo sus cinco hijas predilectas, que al principio lo ayudaron, se volvieron en su contra por avaricia y ambición desmedida. El libro cobró tanta influencia que sus citas se grabaron en miles de iglesias y monasterios. Los artistas encontraron en él una fuente de inspiración, o al menos una fuente de ingresos pues los encargos se dispararon. Y la población, analfabeta ella, también pedía que le contaran esas historias, cosa que hicieron bardos, juglares, titiriteros y bufones.</p>
+                <p>En un par de años el libro de las Verdades se convirtió en el más copiado, y en el breve lapso de unas décadas (a escala histórica), en el más leído. En tiempos en que los libros eran caros y escasos, el Libro de las Verdades era el único asequible y aquel con el que todo humilde letrado había aprendido a leer.</p>
+            <br>
+
+            <h1 class="title">Símbolos y creencias</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>Los limereos creen en Limeres. Para ellos, él es el Dios creador y bondadoso. Todos los humanos son hijos de Limeres. Las cinco mujeres a las que él eligió para enseñar sus secretos se volvieron contra él y usaron lo aprendido para destruir la creación de Limeres. Esto los llevó a un enfrentamiento.</p>
+                <p>Por eso, para los limereos, las guardianas eran consideradas como el origen del Mal, y sus hijos habían de ser exterminados, para acabar con ese Mal.</p>
+                <p>El Pento es el principal símbolo que se encuentra en los colgantes, brazaletes, fachadas, solideos… Se trata de una mano como pidiendo calma. Representa la mano de Limeres diciendo “Alto” a la destrucción de su mundo por las Cinco Destructoras. Tiene varias variantes, a veces es completamente dorada, a veces con un dedo del color de cada elemento. Otras veces una mezcla de las dos versiones anteriores, con los dedos dorados pero una raya, un punto o algún elemento decorativo del color de cada elemento.</p>
+                <p>Otro de los símbolos principales es el de la balanza, que suele representarse con líneas curvas para asemejarlas a nubes. La balanza de las nubes es un símbolo ligado a la muerte y lo que viene después.</p>
+            <br>
+
+            <h1 class="title">Decisión final y muerte</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>El espíritu de la persona es extraído y se coloca en la balanza de nubes de Limeres. Si el alma del juzgado pesa más que las nubes, entonces Limeres lo envía al Averno Tormentoso. Si pesa menos, entonces pasa a Eternia.</p>
+            <br>
+
+            <h1 class="title">La Mano Celeste</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>Es el cuerpo armado de la Iglesia Limerea. Sus componentes son gente fuerte y manipulada, a menudo sacada de la cárcel para cumplir con misiones que les servirán de redención para reducir el peso de su alma y no acabar en el Averno Tormentoso. Les suelen tatuar un Pento en la frente para que no puedan escapar de su oficio. Se dice que una vez te acoge, la Mano Celeste no te deja escapar.</p>
+            <br>
+
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+
+    </div>
+</div>
+        <hr>
+{% endblock %}

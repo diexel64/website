@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Mundo - Edalom
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/header_mundo.jpg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/header_mundo.jpg' %});
+    }
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Mundo de Edalom</h1>
+        <i><p class="header-subtitle"> Navega por esta abundante enciclopedia dedicada a Edalom, en constante ampliación por parte de los ilustrados de la Casa Docta.</p></i>
+        <div>
+            <br>
+            <i class="fa-solid fa-angles-down"></i>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+        
+        <!-- maps row -->
+        <div class="row mb-12">
+            <div class="col-md-12">
+                <a href="{% url 'mapas' %}" class="overlay-img">
+                    <img src="{% static 'imgs/mapas/mundo_mapa1.jpg' %}" alt="Mapas de Edalom">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Mapas</h1>
+                        <p>Cientos de cartógrafos dedicaron su vida para trazar los límites de las tierras, los cauces de los ríos y los picos de las cordilleras. No te pierdas los mapas, pues sin ellos... podrías perderte.<p>
+                    </div>          
+                </a>
+            </div>
+        </div><!-- row maps -->
+        
+        <!-- enciclopedia row -->
+        <div class="row mb-12">
+            <div class="col-md-12">
+                <a href="{% url 'enciclopedia' %}" class="overlay-img">
+                    <img src="{% static 'imgs/edalom/mundo_enciclopedia1.jpg' %}" alt="Enciclopedia de Edalom">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Enciclopedia</h1>
+                        <p>El gran libro de Historia de Edalom, la enciclopedia que lleva siglos escribiéndose en Alderion por los ilustrados de la Casa Docta.</p>
+                    </div>          
+                </a>
+            </div>
+        </div><!-- row enciclopedia -->
+        
+        <!-- bestiario row -->
+        <div class="row mb-12">
+            <div class="col-md-12">
+                <a href="{% url 'enciclopedia' %}" class="overlay-img">
+                    <img src="{% static 'imgs/edalom/mundo_bestiario1.jpg' %}" alt="Bestiario de Edalom">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Bestiario</h1>
+                        <p>Las Crónicas de Edalom son relatos cortos que se centran la historia de un personaje clave de la saga principal.</p>
+                    </div>          
+                </a>
+            </div>
+        </div><!-- row bestiario -->
+        
+    </div>
+</div>    
+{% endblock %}

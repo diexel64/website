@@ -1,10 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base_articulo.html' %}
+{% load static %}
 
-</body>
-</html>
+
+{% block title %}
+    Poemario del Hijo Rojo - Enciclopedia
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/edalom/poemariohijorojo.jpg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/edalom/poemariohijorojo.jpg' %});
+    }
+    
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Poemario del Hijo Rojo</h1>
+        <i><p class="header-subtitle">Tras la Ola, un antepasado del Hijo Rojo pidió que se le cedieran tierras, fuera donde fuera, pero que fueran independientes del gobierno de los heterocromos. Tras largas negociaciones, el gobierno aceptó, y le dieron las tierras volcánicas de los Tentáculos, al sur del continente. Desde entonces, esas tierras pasaron de manera hereditaria por las manos de los Rojos.
+        <br>
+        El Hijo Rojo, último gobernante de esas tierras, hizo cosas buenas y cosas malas. El poemario es un conjunto de sus acciones. Narra cómo se convirtió en un gran gobernante al principio, reformando el país que le había dejado su padre, y rechazó a los bárbaros de los Mil Reinos y de las Llanuras. Pero la guerra de la Gran Rebelión acabó con él y todo lo que habían creado sus antepasados en esas tierras hostiles para la vida.
+        <br>
+        Termina con su derrota y su muerte a manos de un eterno, llamado Humo, quien tomó esas tierras y las extendió.</p></i>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+        <section id="poemario">
+        <h1 class="title">Canto I: El Hijo Rojo y los bárbaros</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p><i>En tierras volcánicas, ardientes y fieras,
+            <br>El Hijo Rojo surgió, sin miedo, entre las hogueras. 
+            <br>Los Mil Reinos, bárbaros de almas indomables, 
+            <br>Desafiaron su reinado, sus gestas formidables.</i></p>
+            
+            <p><i>Con espada en mano, coraje en su mirada,
+            <br>El Hijo Rojo enfrentó la embestida enconada. 
+            <br>Gritaron los vientos, rugieron los volcanes, 
+            <br>Mientras el líder Rojo empuñaba sus estandartes.</i></p>
+            
+            <p><i>En la batalla encarnizada, un rugir ancestral,
+            <br>Las espadas danzaban en un choque infernal. 
+            <br>Los Mil Reinos, valientes y tercos,
+            <br>Se enfrentaron al Rojo en combate feroz.</i></p>
+            
+            <p><i>Mas el Hijo Rojo, con destreza y honor,
+            <br>Demostró su valía en ese ardiente fragor.
+            <br>Los bárbaros cayeron, uno tras otro, 
+            <br>Ante la fuerza del Rojo, en el bermejo resplandor.</i></p>
+            
+            <p><i>Así, la victoria fue su fiel compañera,
+            <br>En las tierras volcánicas, en su esfera.
+            <br>El Hijo Rojo, un líder sin igual, 
+            <br>Forjó su legado en esa tierra infernal.</i></p>
+
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+
+        <h1 class="title">Canto II</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p></p>
+            <p></p>
+            <p></p>
+
+        <h1 class="title">Canto III</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p></p>
+            <p></p>
+        <h1 class="title">Canto IV</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p></p>
+            <p></p>
+        <h1 class="title">Canto V</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p></p>
+            <p></p>
+        <h1 class="title">Canto VI</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p></p>
+            <p></p>
+        <h1 class="title">Canto VII: La caída del Hijo Rojo</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p>
+                <i>
+                    En la Gran Rebelión, batalla de alta traición,<br> 
+                    El Hijo Rojo luchó con férrea pasión.<br> 
+                    Las llamas ardientes de la revuelta rugían,<br>  
+                    La Guadaña oscura susurraba y conspiraba, mentían.<br><br> 
+                    El Hijo Rojo, valeroso y firme en su deber, <br> 
+                    Desconocía la sombra acechante que había de ceder.<br> 
+                    En la penumbra de la Gran Rebelión, traición atroz, <br> 
+                    Un traidor sin rostro apuñaló al Rojo sin voz.<br> <br>
+                    Vil y artero, el asesinato sin piedad se ejecutó, <br> 
+                    El Rojo, caído, su legado en tinieblas quedó.<br> 
+                    Las tierras que heredó y tanto amó, <br> 
+                    Caen ahora bajo el yugo de Humo, en triste desolación.<br> <br>
+                    La Gran Rebelión cobró su precio alto y amargo, <br> 
+                    El Hijo Rojo, luchador valiente, hoy yace en el margen.<br> 
+                    El continente tembló en caos y desorden, <br> 
+                    La Guadaña, implacable, con sangre se adornó.<br> <br>
+                    Así concluye el Poemario del Hijo Rojo, <br> 
+                    Una epopeya de valentía y oscuro despojo. <br> 
+                    En la Gran Rebelión, el eterno traidor triunfó,<br>  
+                    Y las tierras volcánicas en su sombra se hundieron, sin voz.<br> <br>
+                </i>
+            </p>
+            <p></p>
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>        
+    </div>
+</div>
+        <hr>
+{% endblock %}

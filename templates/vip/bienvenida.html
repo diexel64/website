@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base_vip.html' %}
+{% load static %}
 
-</body>
-</html>
+
+{% block title %}
+    Bienvenida VIP - Edalom
+{% endblock %}
+
+
+{% block header %}
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">¡Enhorabuena {{ user_profile.user.username }},<br> ya eres VIP!</h1>
+        <p>Ahora tienes acceso a contenido exclusivo.</p>
+        <p>En la sección de cuentos, podrás acceder a los cuentos Premium.</p>
+        <p>También encontrarás una sección nueva: el libro dinámico. Te invito a que visites esa sección para que entiendas lo que es.</p>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+
+    
+    
+{% endblock %}
+
+

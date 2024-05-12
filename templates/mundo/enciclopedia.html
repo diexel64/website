@@ -1,0 +1,320 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Enciclopedia - Mundo
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/header_mundo.jpg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/header_mundo.jpg' %});
+    }
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Enciclopedia de Edalom</h1>
+        <i><p class="header-subtitle"> Por los ilustrados de la Casa Docta.</p></i>
+        <div class="tabs">
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('historia')">Historia</button>
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('territorios')">Territorios</button>
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('religion')">Religión</button>
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('casas')">Casas</button>
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('heroes')">Héroes</button>
+        </div>
+        <div>
+            <br>
+            <i class="fa-solid fa-angles-down"></i>
+        </div>
+        
+    </div>
+    
+{% endblock %}
+
+{% block content %}
+
+    
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+          <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+          <div class="blog-post">
+            <p class="blog-post-meta text-center">En proceso de revisión previa a publicación por el Consejo Cerrado de la Cada Docta.</p>
+          </div>
+          <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+          <div id="historia" class="tabcontent">
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title">Historia Olvidada</h2>
+                <p class="lead">Tras varios siglos investigando los libros sagrados, los ilustrados de la Casa Docta cuentan todo lo que se sabe desde la Creación.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='historiaolvidada' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/origen.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+              
+            <hr>
+              
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title">Historia Contemporánea</h2>
+                <p class="lead">El relato de la Historia del continente desde que los heterocromos lo invadieron, empezando por la era del yugo hasta la Fractura, pasando por la larga era del caos.</p>
+              </div>
+              <div class="col-md-5">
+                <a href="{% url 'enciclopedia_articulo' article='historiacontemporanea' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/historiageneral.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450" height="280">
+                </a>
+              </div>
+            </div>
+
+            <hr>
+              
+          </div>
+        
+          <div id="territorios" class="tabcontent">
+              
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región de</span> Suna.</h2>
+                <p class="lead">Estudios y anotaciones acerca de la región de Suna.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='suna' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/suna.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región de</span> Mohad.</h2>
+                <p class="lead">Estudios y anotaciones acerca de la región de Mohad.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='mohad' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/mohad.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región del</span> Khaz'Tiber.</h2>
+                <p class="lead">Estudios y anotaciones acerca del Khaz'Tiber.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='khaztiber' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/khaztiber.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región de</span> Dareniel.</h2>
+                <p class="lead">Estudios y anotaciones acerca de la región de Dareniel.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='dareniel' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/dareniel.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región de</span> Mareas Rotas.</h2>
+                <p class="lead">Estudios y anotaciones acerca de la región de Mareas Rotas.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='mareasrotas' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/mareas.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región de las</span> Islas del Borde.</h2>
+                <p class="lead">Estudios y anotaciones acerca de la región de las Islas del Borde.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='islasdelborde' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/islasborde.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región de las</span> Llanuras.</h2>
+                <p class="lead">Estudios y anotaciones acerca de la región de las Llanuras.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='llanuras' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/llanuras.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región de los</span> Dominios de Lor'Horn.</h2>
+                <p class="lead">Estudios y anotaciones acerca de la región de los Dominios de Lor Horn.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='dominios' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/lorhorn.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región de los</span> Mil Reinos.</h2>
+                <p class="lead">Estudios y anotaciones acerca de la región de los Mil Reinos.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='milreinos' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/milreinos.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región del</span> Creciente.</h2>
+                <p class="lead">Estudios y anotaciones acerca de la región del Creciente.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='elcreciente' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/creciente.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title"><span class="text-muted">Región de</span> Alderion.</h2>
+                <p class="lead">Estudios y anotaciones acerca de la región de Alderion.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='alderion' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/alderion.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+
+            <hr>
+
+
+          </div>
+        
+          <div id="religion" class="tabcontent">
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title">Religión Jorolita</h2>
+                <p class="lead">Generalidades sobre la religión jorolita.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--quitar img-fluid para talla exacta -->
+                <a href="{% url 'enciclopedia_articulo' article='religionjorolita' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/jorol.jpeg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title">Religión Limerea</h2>
+                <p class="lead">Generalidades sobre la religión limerea.</p>
+              </div>
+              <div class="col-md-5">
+                <a href="{% url 'enciclopedia_articulo' article='religionlimerea' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/pento1.jpeg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450" height="280">
+                </a>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title">Otras religiones</h2>
+                <p class="lead">Generalidades sobre otras religiones minoritarias en el continente.</p>
+              </div>
+              <div class="col-md-5">
+                <a href="{% url 'enciclopedia_articulo' article='otrasreligiones' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/elements1.jpeg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450" height="280">
+                </a>
+              </div>
+            </div>
+
+            <hr>
+
+          </div>
+        
+          <div id="heroes" class="tabcontent">
+              
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="title">El Poemario del Hijo Rojo</h2>
+                <p class="lead">Las hazañas más gloriosas del Hijo Rojo contadas en verso.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <a href="{% url 'enciclopedia_articulo' article='hijorojo' %}">
+                  <img class="featurette-image rounded" src="{% static 'imgs/edalom/poemariohijorojo.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image" width="450px" height="280px">
+                </a> 
+              </div>
+            </div>
+              
+            <hr>
+
+          </div>
+          <!-- Add more divs with unique IDs for additional themes -->
+    </div>
+</div>
+<script src="{% static 'js/tabsChange.js' %}"></script>
+{% endblock %}

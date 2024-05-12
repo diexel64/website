@@ -1,10 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base_articulo.html' %}
+{% load static %}
+
+
+{% block title %}
+    Historia Contemponánea - Enciclopedia
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/edalom/historiageneral.jpg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/edalom/historiageneral.jpg' %});
+    }
+    .justify {
+        text-align: justify;
+    }
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Historia Contemporánea</h1>
+        <i><p class="header-subtitle">Esta es la Historia Olvidada, recuperada de las entrañas del Templo de Kitazh por un traidor que eligio el camino de la verdad.</p></i>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+        <section id="origentiempo" class="justify">
+            <h1 class="title">La Era del Yugo</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p>Tras la guerra de los eternos, los hijos de las Guardianas que ayudaron al bando ganador fueron premiados con una tierra propia : Skylborg. Allí vivieron en paz desde aproximadamente el año -1500 hasta el -1300. En el transcurso de dos siglos, la isla empezó a quedarse pequeña, y decidieron ir en busca de otras tierras.</p>
+            <p>Para ese entonces, los que habían participado en la guerra continental ya estaban muertos, de modo que para la mayoría las vastas extensiones del continente eran desconocidas. Se apoderaron de sus tierras con gran facilidad gracias al poder de los elementos, la candidez de los nativos y la simpleza de sus armas. La invasión fue conocida como la Ola.</p>
+            <p>Establecieron un gobierno centralizado, con la sede en la mítica ciudad de Kitazh, de común acuerdo con los eternos, quienes veían en la dominación heterocroma un cierto orden natural, pues eran más poderosos y descendían del mismísimo Akros.</p>
+            <p>Siguieron siglos de dominación heterocroma, desde el -1300 hasta el año 0 (el año de la Gran Rebelión, que se usa ahora como punto de partida), durante los cuales los pueblos se homogeneizaron. Todos fueron asimilados y aunque no tuvieron que abandonar todas sus costumbres, si fueron obligados a olvidar sus lenguas y aprender el Común. Los gobernantes repartieron agentes heterocromos por doquier para facilitar la prosperidad gracias al poder de los elementos.</p>
+            <p>Algunos de esos agentes se corrompieron y escaparon a la autoridad. Con el tiempo, hubo quienes se desviaron del camino marcado por Kitazh. En vez de usar el poder para la prosperidad de las aldeas que se les atribuyeron, los gobernadores lo usaron para subyugar a la gente. Y el gobierno de Kitazh no podía hacer nada, la gestión de un territorio tan vasto era muy compleja.</p>
+            <p>Las guerras internas se saldaron con ingentes cantidades de muertes civiles, que nada tenían que ver con los conflictos. Los heterocromos se debilitaron entre ellos y, poco a poco, la gente empezó a odiarlos, incluso a los que luchaban por defender al pueblo subyugado.</p>
+            <p>Así germinó la semilla de la Gran Rebelión.</p>
+            <br>
+    
+            <h1 class="title">La Era del Caos</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p>Poco a poco, voces disonantes empezaron a alzarse contra la tiranía de tal o cual caudillo heterocromo. Movimientos nacionalistas arbolaban el argumento de que los monarcas venían de Skylborg, que aquel no era su continente y que debían echarlos de vuelta a su isla. Al principio fueron movimientos locales y diseminados, y tan solo cuando lograron unirse bajo un mismo estandarte se armó la Gran Rebelión, que destituyó a los gobernantes heterocromos y los obligó a retirarse.</p>
+            <p>La Gran Rebelión y la persecución de los heterocromos enfrentó a los dragones también, forzados a elegir un bando. Tres de los eternos de Kitazh rompieron su juramento (Humo, Sahelia, y Ruto), para luchar en el bando de los rebeldes. Fue una matanza sin igual. Pero al final, el reducido número de heterocromos fue decisivo para el desenlace. Los hombres del continente vencieron y expulsaron al invasor, que huyó hacia el oeste, a unas islas muy, muy lejanas.</p>
+            <p>Desde entonces, los heterocromos son repudiados en el continente, hasta tal punto que una religión, la limerea, se desarrolló considerablemente al inculcar la idea de que no eran humanos, sino demonios. Sahelia fue la encargada de manipular a las mentes y borrar de la memoria colectiva el recuerdo de la religión jorolita. Al enterarse, los eternos de Kitazh escondieron ejemplares del Joról y otros libros jorolitas en las entrañas del Templo al que Sahelia nunca podría volver.</p>
+            <p>La Era del Caos abarca desde el comienzo de la Gran Rebelión en el año -30 hasta el fin de las Cruzadas, en el año 231. En realidad, tras la Gran Rebelión los nuevos gobernantes del continente, cada uno encasillado en un territorio demasiado pequeño para su gusto, se dedicaron a hacerse la guerra y expandirse continuamente. Durante este tiempo hubo quienes lucharon por la vida de los heterocromos que quedaban. Cuatro de ellos se convirtieron en mártires y sus gestas narradas en canciones, poemas y cuentos que se hicieron leyendas.</p>
+            <br>
+    
+            <h1 class="title">Los héroes heterocromos</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>Oruón en el Llanto de la Montaña</p>
+                <p>La Sirena en Recuerdos de Sietemares</p>
+                <p>El Hijo Rojo en Poemario del Hijo Rojo</p>
+                <p>La Damapluma en La Balada de la Damapluma</p>
+                <br>
+    
+            <h1 class="title">Las Cruzadas</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>Y es que los héroes de unos son los villanos de otros. Para los rebeldes que acababan de hacerse con el continente, todos los que se lanzaron a terminar de erradicar esa plaga que los había subyugado durante siglos fueron y siempre serán los héroes. Los guerreros más fieros partían a por las recompensas que se ofrecían por la cabeza de cualquier hijo de las guardianas.</p>
+                <p>La Primera Cruzada fue convocada por Dareniel con la creación de la Mano Celeste, el cuerpo armado de la Iglesia Limerea. Se dice que se creó durante una reunión entre el rey del Norte y el Pontífice de Dareniel supervisada por una bruja que el pueblo había apodado “la dama de las mil verdades”. Aquello acarreó la creación de organizaciones anti-jorolitas similares como la Guadaña o la Sagrada Mano, aunque adquirieron la fama más bien durante la Segunda Cruzada, que fue mucho más cruel y sangrienta.</p>
+                <p>La Segunda Cruzada llegó con las ingentes cantidades de oro que prometió el emperador Moshi IV en el año 194, temeroso de que una banda de heterocromos pudiera poner fin a su dinastía. En estos años sucedieron las historias de la Damapluma y de Oruón, cazado por los miembros de la Guadaña.</p>
+                <p>Después, las Cruzadas dejaron de ser algo continental para organizarse por territorios, convirtiéndose en simples cacerías o pogromos, siempre a una escala menor. Esto se debe a que la Iglesia Limerea tuvo sus propias divisiones internas y los reyes o gobernantes de los territorios dejaron de considerar a los heterocromos como una amenaza, pues ya casi no quedaban.</p>
+                <br>
+
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+
+    </div>
+</div>
+        <hr>
+{% endblock %}

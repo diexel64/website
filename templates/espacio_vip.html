@@ -1,10 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base_vip.html' %}
+{% load static %}
+
+
+{% block title %}
+    Espacio VIP - Edalom
+{% endblock %}
+
+
+{% block header %}
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Espacio VIP</h1>
+        <i><p class="header-subtitle" id="randomSubtitle"></p></i>
+    <script src="{% static 'js/subtitleRandom.js' %}"></script>
+    <div>
+        <br>
+        <i class="fa-solid fa-angles-down"></i>
+    </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+    <div class="container page-container">
+        <div class="col-md-10 col-lg-8 m-auto">
+            <h6 class="title mb-4">¡Bienvenido a la zona VIP!</h6>
+            <p class="mb-5">Ahora tienes acceso a la nueva sección de Libro Dinámico, donde podrás leer capítulo a capítulo una historia completamente inédita.
+            <br>
+            En la sección de cuentos tambien podrás acceder a los que están marcados como VIP.</p>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <a href="{% url 'libro_dinamico' %}" class="overlay-img">
+                    <img src="{% static 'imgs/ld/alden3.jpeg' %}" alt="Sección Libro Dinámico">
+                    <div class="overlay"></div>
+                    <div class="des">
+                        <h1 class="title">La Leyenda de Alden</h1>
+                        <h6 class="subtitle">Libro Dinámico</h6>
+                        <p> Sigue la historia de cómo Alden, un joven huérfano en la gran ciudad de Magnalia, logra ingresar en la Burbúja.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="{% url 'cuentos' %}" class="overlay-img">
+                    <img src="{% static 'imgs/cuentos2.jpg' %}" alt="Sección Cuentos - VIP">
+                    <div class="overlay"></div>
+                    <div class="des">
+                        <h1 class="title">Cuentos VIP</h1>
+                        <h6 class="subtitle"><i class="fa-solid fa-crown"></i></h6>
+                        <p> Ahora los cuentos VIP estarán desbloqueados y podrás leerlos gratis.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="{% url 'mi_cuenta' %}" class="overlay-img">
+                    <img src="{% static 'imgs/cuenta.jpg' %}" alt="Sección Cuenta Personal">
+                    <div class="overlay"></div>
+                    <div class="des">
+                        <h1 class="title">Mi Cuenta</h1>
+                        <h6 class="subtitle">Datos personales</h6>
+                        <p> Aquí puedes visualizar/modificar tus datos personales. </p>
+                    </div>
+                </a>
+            </div>
+        </div><!-- end of row 2 -->
+    </div>
+{% endblock %}
+
+

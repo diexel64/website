@@ -1,10 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base_vip.html' %}
+{% load static %}
 
-</body>
-</html>
+
+{% block title %}
+    Cuenta - Edalom
+{% endblock %}
+
+
+{% block header %}
+    <div class="overlay"></div>
+    <div class="header-content">
+        <div class="profile-details text-center">
+
+        <form action="{% url 'mi_cuenta' %}" method="post" enctype="multipart/form-data" class="form-group mt-4">
+            {% csrf_token %}
+            <p for="username" class="col-form-label">Usuario</p>
+            <input type="text" id="username" name="username" class="form-control" value="{{ user_profile.user.username }}" required readonly>
+
+            <p for="email" class="col-form-label">Email</p>
+            <input type="text" id="email" name="email" class="form-control" value="{{ user_profile.user.email }}" required readonly>
+
+            <p for="date_joined" class="col-form-label">Fecha de Registro</p>
+            <input type="text" id="date_joined" name="date_joined" class="form-control" value="{{ user_profile.user.date_joined|date:"d-m-Y" }}" required readonly>
+
+            <br>
+
+            <div>
+                <p for="userimg" class="col-form-label">Imagen de perfil</p>
+                <div class="profile-image">
+                    <img src="{{ user_profile.userimg.url }}" alt="{{ user_profile.user.username }}'s Profile Image" class="img-fluid text-center mb-3" style="max-height: 200px;">
+                </div>
+                <input type="file" id="userimg" name="userimg" class="form-control" value="{{ user_profile.user.username }}">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Modificar</button>
+
+        </form>
+
+        <div>
+            <p class="col-form-label">Suscripción</p>
+            <input type="text" id="suscripcion" name="suscripcion" class="form-control" value="{% if suscripcion %}Activa{% else %}Inactiva{% endif %}" required readonly>
+            <a href="{% url 'subscribe' %}" class="btn btn-success">Suscribirse</a>
+        </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+
+    
+    
+{% endblock %}
+
+

@@ -1,10 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base_cuento.html' %}
+{% load static %}
+
+
+{% block title %}
+    Shandri Wa - Cuentos de Edalom
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/cuentos/shandriwa.jpeg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/cuentos/shandriwa.jpeg' %});
+    }
+    
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Shandri Wa</h1>
+        <i><p class="header-subtitle">Darwen es el líder y fundador del Gremio de los Jinetes de dragón. Ese día, recibe noticias de su hijo desaparecido.</p></i>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+        <section>
+        <div id="shandriwa">
+          <p></p>
+          <p>– Me sobrepasa, Dar Shei. Me sobrepasa.</p>
+          <p>– La has llevado durante los últimos diez años, y no podías haberlo hecho mejor. El resultado habla por sí solo.</p>
+          <p>– Y ya no puedo seguir haciéndolo bien. La Forja ha crecido, el Gremio también. Ambos requieren atención. Mucha más de la que yo les pueda dar.</p>
+          <p>– Darwen, tú eres el maestro del fuego. Eres…</p>
+          <p>– Está decidido, Dar Shei, no sigas por ahí. Vengo de Do Shoi, el Khaz Dolu aprueba mi decisión.</p>
+          <p>– ¿Cuál?</p>
+          <p>– La de ponerte al frente de la Forja Roja.</p>
+          <p>Dar Shei abrió mucho los ojos, olvidándose de pestañear por un momento. Darwen sabía lo mucho que le importaba la forja a su amigo. Había sido su brazo derecho desde que, diez años atrás, abrieran el almacén y trajeran al primer dragón. Antes incluso de que hubiera fuelles funcionando.</p>
+          <p>– Darwen –oyó que decía alguien a sus espaldas–. Un mensajero con recado urgente.</p>
+          <p>– Voy –declaró, pero antes de irse se acercó a su amigo para dedicarle unas palabras más–. Lo harás bien, Dar Shei. La Forja es más tuya que mía, lo sabes. Siempre lo has sabido.</p>
+          <p>– Gracias, maestro. Lo haré lo mejor que sé.</p>
+          <p>Aprobó Darwen la respuesta con un asentimiento y una sonrisa. Se alejó después, caminando hacia la salida, donde el aire frío de las cumbres del Fan Si Fana se mezclaba con el calor del fuego y los metales al rojo vivo.</p>
+          <p>– ¿Y el mensajero?</p>
+          <p>– Os espera.</p>
+          <p>Shio Bum le acompañó hasta la cámara de recibimientos, donde las antorchas flameaban sin inquietarse por las ráfagas que a veces silbaban en el interior de la cueva. Ahí estaba el mensajero, o mejor dicho, la mensajera. Se saludaron con el gesto del dragón protocolario.</p>
+          <p>– Es sobre vuestro hijo, maestro –la mensajera hizo una pausa, pero al ver que Darwen permanecía a la espera con el rostro impasible, continuó–. Han encontrado un cartapacio en los márgenes del Mar Cerrado. Contiene un conjunto de escritos… que se han identificado como pertenecientes a Aaron.</p>
+          <p>– ¿Y Aaron?</p>
+          <p>– Todavía sin rastro –admitió la mujer, agachando la cabeza–. Pero las patrullas siguen inspeccionando la zona.</p>
+          <p>El maestro del fuego observó que la mensajera sostenía el susodicho cartapacio por el asa. No parecía pesado, pero conociendo a su hijo, debía de haber una buena cantidad de pergaminos.</p>
+          <p>– Supongo que vienes a entregarme eso.</p>
+          <p>Trató de mantener la calma aunque por dentro bullera de nervios. Noticias de su hijo. Por fin.</p>
+          <p></p>
+          <p>Tras agradecer el rápido trabajo de la mensajera, Darwen Ojorrojo cerró la puerta de su cámara. Con el corazón en un puño, un nudo en la garganta y las rodillas temblorosas logró sentarse en el incómodo sillón de cuero gastado. Cuando desplegó el pergamino y empezó a leer, le temblaban las manos. De las que había en el cartapacio, aquella era la última carta que había escrito su hijo. Decidió empezar por ahí, quizá diera alguna pista sobre el lugar al que había ido después de la catástrofe.</p>
+          <em>
+          <p>Necesito escribir. Necesito explicar. Lo que ha ocurrido no es culpa mía. No. No es culpa mía. Por favor. No es culpa mía. ¿Por dónde empiezo? Vayamos al principio. El principio del fin. Cuando mi padre y yo nos distanciamos.</p>
+          <p>Mi padre siempre quiso que trabajara en la forja de Dar Shi Ben, pero habría sido un desperdicio. No solo por mí, sino por Tiranior. ¿Encerrar a un dragón primigenio en una forja? ¿Encadenarlo y pedirle que escupa fuego cada dos por tres, dejándole salir a volar dos veces a la semana? Al cabo de unos meses la temible sombra negra se habría convertido en un dragoncito esmirriado, hazmerreír de sus congéneres. ¿Qué habrían pensado sus hijos? Habría sido una vergüenza. Un oprobio. Ni hablar.</p>
+          <p>Por suerte, el Khaz Dolu tenía más visión que mi querido padre, y decidió enviarme a las nubes como explorador. Fui el primero en surcar el océano y encontrar las islas del borde. Tamaña gesta no habría sido posible sin un dragón primigenio. Tiranior llegó exhausto, al igual que yo. Pero aquello me dio una reputación sin igual.</p>
+          <p>Mi fama como explorador me jugó una mala pasada, eso sí. La resistencia de Tiranior le permitía volar más tiempo a mayores altitudes, en climas más fríos. Pero ¿qué había de su jinete? Nadie se preocupaba por el puto jinete. ¿Acaso tenía que explorar el norte del norte donde apenas podía abrir los ojos de las lágrimas que se me congelaban en las comisuras? ¿Por qué solo yo? Me enviaban a los lugares más ingratos, los más hostiles para el hombre. Y así pasaron varios años. Hasta que dije “basta”. No se daban cuenta de lo duro que era. Ellos solo querían hacer sus malditos mapas.</p>
+          <p>Dejé de explorar para el Khaz Dolu. De hecho, dejé de trabajar para el Tiber. El gremio de los jinetes de dragón se había vuelto un poco hosco. Algunos ni siquiera creían que había descubierto las islas del borde. Sentían envidia porque yo montaba en un dragón primigenio, y ellos en descendientes mucho más jóvenes y verdes. A excepción de mi padre, claro. Él tenía a Volaghar y a Rinalian. Jamás entendió que Tiranior me eligiera. Nunca me consideró un jinete de verdad, por eso me quiso enviar a la Forja. En fin. La gente no me quería en el Tiber, ¿qué otra cosa podía hacer, sino irme?</p>
+          </em>
+          <p>Darwen dejó el pergamino un momento. Se masajeó las sienes con pulgar y corazón. Aaron nunca le había perdonado. Era doloroso. Siempre lo había sido, porque en el fondo sabía que decirle esas cosas solo fomentarían su locura. ¿Pero qué debía hacer? ¿Por qué no me dijiste cómo debía actuar para evitar esto, Pondara? Ahora ya daba igual. Ya había ocurrido. Se había usado el fuego para el peor de los fines. Lo único que siempre había intentado evitar con la creación del gremio. La razón por la que había establecido todas esas normas. La estricta selección de corazones puros… Había permitido una excepción. Solo una. Porque era su hijo. Ahora se daba cuenta. Con las consecuencias sobre la mesa. Se daba cuenta de que debió haberlo cortado de raíz.</p>
+          <p>Respiró hondo para calmarse, se acomodó de nuevo y retomó la lectura del pergamino.</p>
+          <em>
+          <p>Y por fin fui libre. Libre de verdad. Sin cadenas jerárquicas alrededor del cuello. Tiranior y yo exploramos todos los cielos. Ya no eran misiones. Íbamos al norte en la época cálida, al sur en la época invernal. Al oeste cuando se disipaban las nieblas y al este cuando los monstruos de los Mil Reinos estaban hibernando. ¡Cuántas maravillas esconde este mundo! Vi tantas cosas, y aprendí otras tantas… Exploré las Mareas Rotas como un dios. Sí. Los rapazzi de las corrientes carnívoras me adoraban. En las albuferas, los bárbaros quisieron nombrarme Alto Saldado, a pesar de que treinta de sus hombres me sacaran una cabeza. Los cazadores de Serpentia me ofrecieron hacerme Gran Rey y emprender una campaña para unificar los Mil Reinos. Llegué hasta Duul, hasta las mismísimas puertas del Templo de la Ascensión. Existe de verdad. No hay cómo entrar, pero existe.</p>
+          <p>Estuve una temporada en las tierras humeantes, pero me cansé de volar tan bajo y tener que respirar ese humo con olor a ceniza. Exploré las llanuras y las Cien Tribus también me veneraron. Los Nahua, los Nukak, los Zulúr, los Mahasa, los Korubi, los Tinglit, los Kaloshi… Tan solo los Kawiva rechazaron arrodillarse, pero eran tan pocos… ¿Para qué iba a insistir por cincuenta llaneros con la mitad de caballos? Además, no era mi intención quedarme.</p>
+          <p>Pasé varias lunas en la Costa de las Luces. Allí, en la parte más meridional nos encontramos una gran roca. Nacía de las entrañas de la tierra y se alzaba imponente como el Eventel. No tan alta, pero sí mucho más ancha. Tiranior se volvió loco en la cima, tuve problemas para controlarlo. Peor al final salimos de allí hacia Magnalia, donde el rey me recibió con honores y me ofreció ponerme al frente de su comando de élite, formado exclusivamente por magnos. Pero yo tenía otra cosa en mente: quería volver a ver a Luara.</p>
+          <p>De modo que me hice con suficiente comida como para surcar el mar otra vez, y volví a encontrar esas islas remotas. Mérito de Tiranior, por supuesto. Es increíble es sentido de la orientación que tienen los dragones. Volví al atolón de Sukuma. Volví a por ella, tal y como le prometí.</p>
+          <p>Luara iluminó mis días otra vez. Y en esa ocasión no había que volver. No había responsabilidades. Podía quedarme allí para siempre. Y sin duda, eso habría sido lo mejor. Quedarnos en el paraíso de los hombres de ojos de colores. Pero ella quería volar. Quería salir del nido. Ella no había conocido el continente, y sus ojos azules flameaban de emoción cuando le contaba mis aventuras al otro lado del mar. Jamás habría vuelto de no haber insistido ella tanto.</p>
+          <p>La vuelta a casa fue mucho más amena a su lado. Con Luara, exploré el continente de nuevo y aproveché para saludar a viejos amigos. Luara siempre quería más. Si sobrevolábamos un bosque, ella quería bajar y acampar en él. Si sobrevolábamos una ciudad, ella quería bajar a ver las fachadas, a oler las calles, a probar los platos, a escuchar los acentos. Tenía esa aura especial que hacía que todo brillara a su alrededor. Bien podría haber vivido en una pocilga, con ella me habría parecido un palacio. Pero en eso también nos sonrió la suerte. Al principio.</p>
+          <p>En una de esas acampadas que mencionaba previamente, nos topamos con unos aborígenes de la Jungla Perdida. Al ver al dragón, estos se asustaron y huyeron. Es difícil moverse en la Jungla Perdida, y aún más orientarse, de modo que apenas intentamos seguirlos. Cuando cayó el sol, Luara oyó unos sollozos mientras dormíamos, y cuando yo desperté, me encontré con un niño pequeño descansando a mi lado, en mi tienda. En la huida, los aborígenes se habían separado y el niño no había sabido volver a casa. Lo ayudamos, y así fue como encontramos la ciudad sagrada de Shandri Wa.</p>
+          <p>Nos recibieron a gritos. Y no de los de alegría. A pesar de las explicaciones del niño, que nos defendió que uñas y dientes, y de la madre, que resultó ser un alto cargo de aquella sociedad, los habitantes nos miraban con desconfianza. Los ancianos abogaban por echarnos. Se armó tanto ajetreo que yo no deseaba nada más que largarme de allí. Pero Luara ya se había enamorado de aquel lugar. Y no era para menos. Pero ya he descrito la belleza de Shandri Wa en otros rollos. El caso es que, al final, nos quedamos. Nos integramos. Fuimos felices. Fueron los años más felices de mi vida.</p>
+          <p>Por eso cuando vi lo que le hicieron a Luara, no pude dejar a nadie vivo. ¿Cómo iban a merecerse vivir en tal paraíso después de hacerle lo que le hicieron? Con premeditación, para colmo. Esperaron al momento idóneo. Me enteré de que mi padre, maestro del fuego en el Khaz’Tiber, había enfermado gravamente. Que tenía intención de abandonar la Forja y quizá también retirarse del Gremio. Era mi padre, después de todo. Aunque habíamos tenido nuestras diferencias, ¿cómo no iba a querer a mi padre? </p>
+          <p>Salí volando a Do Shoi. Luara quería venir, pero me negué. Las cosas se habían puesto feas con los pogromos en el Tiber. Jamás me imaginé que el verdadero peligro pudiera estar en casa. Ni siquiera allí, en Shandri Wa, la ciudad de la felicidad. La ciudad libre de prejuicios. Mentiras. ¡Eran solo mentiras! Los forasteros nunca serían bienvenidos en Shandri Wa. Nos rechazaron. A pesar de todo lo que les dimos, Luara y yo. Siempre habría alguien que rechazaría compartir el paraíso. Siempre. Porque así somos los humanos: egoístas.</p>
+          <p>Volví y me la encontré allí tumbada, en el altar de Shivawa, donde sacrificaban a los animales. Tenía la piel blanca de los muertos y los ojos cerrados. No tanto como mis puños. Grité al cielo con tanta furia que se tiñeron de rojo. Sentí arder mis pupilas como nunca lo habían hecho. Tiranior acudió, compartiendo mi ira. Su fuego rabioso se extendió por el firmamento, inundando las nubes de un calor sofocante. La ciudad se detuvo a admirar su final. Lo vi en sus ojos. En los ojos de los ancianos. </p>
+          <p>Lo quemamos todo. Lo quemamos todo. Los quemamos a todos. A todos.</p>
+          <p>Me sentí mejor. Por un instante, cuando terminé, me sentí mejor. Volví al altar de Shivawa, con Luara. Ella seguía muerta.</p>
+          <p></p>
+          <p>Retomo la escritura de este rollo después de unos días. Mi corazón sufre la pérdida. Noto el dolor en cada latido. He acudido al Templo de la Ascensión en busca de algo. Una pista. Sospecho que hay poder en ese lugar. Pero no se puede entrar. No a menos que uno espere tres eternidades. ¿Cómo va alguien a esperar tres eternidades? Ya no sé qué hacer. Nada me la va a devolver. Se ha ido. No tengo a nadie, y no quiero tener a nadie que no sea ella. Para qué seguir en este mundo de perpetuo rechazo. Más ahora que han vuelto a empezar los pogromos. Incluso los que me veneraron lo hicieron por miedo, por puro instinto de supervivencia. Hipócritas. Debería quemaros a todos. </p>
+          <p>Pero estoy cansado. De todo esto. Tiranior también. Él no se lo merece. No se merece compartir mi dolor. Tengo que darle un respiro, tengo que permitirle vivir sin este lastre. Solo hay una forma de hacerlo. Y es precisamente la misma que podría llevarme hasta Luara. La única que me queda por probar. </p>
+          <p>Tengo a Kaaldanor a mi lado, desenfundada. Ya lo he meditado largo y tendido. Voy a hacerlo. Padre. Si lees esto, no me busques. Me llevaré a Kaaldanor conmigo. Hay algo en su filo. Algo en sus runas. Creo… creo que es algo malo. Es mejor que me la quede yo, allí adonde voy. Cuida de Tir, Padre. Y cuídate.</p>
+          <p>Aaron.</p>
+          </em>
+          <p>Cuando Darwen terminó de leer, se dio cuenta de que había estado empapando el pergamino con sus lágrimas. Lo enrolló y se pasó la manga de la túnica por la cara. Su hijo había calcinado una ciudad entera. Pondara se lo había advertido. Jugar con fuego es peligroso. Para colmo, el pergamino no solo revelaba el autor de aquella masacre. También revelaba el secreto de Darwen. Si se supiese…</p>
+          <p>Recordó las palabras de la mensajera: “Contiene un conjunto de escritos… que se han identificado como pertenecientes a Aaron”. <em>Ya los han leído. Lo saben. Solo queda esperar. Llorar y esperar.</em></p>
+          <p></p>
+          <p>La espera no fue muy larga. Alguien llamó a la puerta. Darwen se levantó, sus rodillas flaquearon y a punto estuvo de darse de bruces contra la mesita, pero sus manos lograron apoyarse en ella para evitar el accidente. Avanzó lentamente, los hombros decaídos y la moral por los suelos. Había esperado encontrarse con los soldados del Khaz Dolu, que lo llevarían a Do Shoi donde sería juzgado por sus mentiras. Pero jamás habría imaginado que el Khaz Dolu en persona se personara en su cueva, allí, en la Forja Roja.</p>
+          <p>Mayor fue su sorpresa cuando el líder supremo del Tiber se lanzó a abrazarlo.</p>
+          <p>– No ha sido culpa tuya, Darwen. No ha sido culpa tuya –dijo.</p>
+          <p>Darwen estaba en shock. No supo que decir, ahí, abrazado a su superior, en la entrada de la lúgubre cámara que hacía de estancia cuando acudía a la Forja. Sintió una extraña mezcla de emociones inundar su garganta. Subieron como avalanchas en sentido contrario. Una quería salir a gritos. Otra a puñetazos. Pero solo una salió, por los ojos, y empaparon la túnica blanca del Khaz Dolu.</p>
+          <p>– ¿Cómo? –logró balbucir entre sollozos–. ¿Cómo ha podido ocurrir?</p>
+          <p>– No lo sé, viejo amigo, no lo sé. Pero entremos. Este asunto requiere discreción. Darwen, no dejaré que caigas. Eres uno de los nuestros, digan lo que digan. Has hecho más por este país que todos los cruzados juntos. Vamos.</p>
+          <p>Tristeza, rabia, incomprensión. Y un grano de alivio, al fin y al cabo. Esto último duró hasta que vio a Shio Kho entrar justo detrás del Khaz Dolu. Este le dirigió una sonrisa cómplice. Algo que no había ocurrido desde… Algo que no había ocurrido nunca, que él recordara.</p>
+          <p>Se sentaron en torno a la mesita. Darwen todavía estaba hecho un amasijo de emociones encontradas. No tenía ninguna gana de atender asuntos de esa índole. Tan solo quería estar solo y pensar en su hijo. Leer los pergaminos y tratar de entender lo que había ocurrido. Pero el deber no le iba a dar ese respiro.</p>
+          <p>– No me mires así, Darwen. Para mí no ha sido un descubrimiento. Ambos lo sabíamos –Shio Kho miró al líder supremo, y este asintió. </p>
+          <p>– En la gruta lo supimos los primeros. Fue lo primero que pensó mi maestro cuando te vio llegar a Do Shoi con esos huevos de dragón, hace casi medio siglo. Shio Huan se fue, y me legó su cargo. Entre otras cosas, me enseñó que la guerra y la amistad no entiende de razas.</p>
+          <p>– Darwen –prosiguió el Khaz Dolu–. La mayoría de los perros cazan gatos. Hay perros que se matan entre sí. Pero también están los que se alían con los gatos. En mi opinión, esos son los más listos.</p>
+          <p>– Cuando el pueblo lo sepa… –empezó Darwen.</p>
+          <p>– No lo sabrá. No hasta después de tu muerte –se apresuró a decir Shio Kho–. Vive tranquilo, Darwen Ojorojo. Llora a tu hijo.</p>
+          <p>– Te daremos un respiro –agregó el Khaz Dolu–. Entendemos lo difícil que tiene que ser esto.</p>
+          <p>– Yo… Ahora mismo, no puedo…</p>
+          <p>– Cometiste un error, cierto. El tipo de error que se buscó cortar de raíz con la prohibición del amor en el gremio. Pero tú ya tenías un hijo cuando lo fundaste. No podías renunciar a eso. Sabíamos que Aaron representaba un riesgo cuando nos dejó, pero no hicimos nada. Por ti. </p>
+          <p>– Así que no es culpa tuya, Darwen –continuó el Khaz Dolu–. La culpa es de todos.</p>
+          <p>– Así es –asintió Shio Kho–. Ahora, y por crudo que suene, el caso no volverá a repetirse, y creemos que el gremio está en buenas manos –hizo una pausa–. Además, solo tú puedes consolar a Tiranior.</p>
+          <p>– No… Después de algo así… Es imposible… No volverá a volar. No hasta dentro de varios siglos. Y creedme, será mejor así.</p>
+          <p>Los dos mandatarios se fueron tras terminarse el vino caliente, y Darwen por fin pudo llorar a su hijo. </p>
+          <p></p>
+          <p>Pasaron varios años hasta que encontraron el cuerpo de Aaron en el fondo del Mar Cerrado, con un bolón como lastre atado al tobillo y una espada clavada entre las costillas. Para entonces, los peces habían dejado poco más que los huesos, pero la espada despejó toda duda: se trataba de Kaaldanor.</p>
+          <p>La última contribución de Darwen Ojorojo al país fue el alegato en defensa de su hijo, que si bien no le eximía de su responsabilidad en la matanza, dejaba claro que la espada tenía algo que ver. Tras analizar los pergaminos de Aaron, se descubrió que los rasgos de locura empezaron con la entrega de la espada.</p>
+          <p>En sus últimos años de vida, Darwen trató de averiguar por todos los medios de donde había sacado su hijo aquella espada, pero el misterio sigue sin respuesta incluso hoy en día, mientras la espada descansa encerrada en la sala de reliquias del Palacio Dorado de Do Shoi.</p>
+
+        </div>
+        </section>
+    </div>
+</div>
+        <hr>
+{% endblock %}

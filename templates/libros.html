@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Libros - Edalom
+{% endblock %}
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/header_libros.jpg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/header_libros.jpg' %});
+    }
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Libros de Edalom</h1>
+        <i><p class="header-subtitle">Encuentra aquí toda la información sobre los libros publicados que acaecen en el mundo de Edalom.</p></i>
+        <div>
+            <br>
+            <i class="fa-solid fa-angles-down"></i>
+        </div>    
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container page-container">
+        <section id="relatos">
+            <div>
+                <h3 class="title mb-2">Crónicas de Edalom</h3>
+                <p class="mb-2">Relatos cortos ambientados en el mundo de Edalom.</p>
+                <p class="mb-2">Solo disponibles en Kindle</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <a href="https://www.amazon.es/gp/product/B09JP14F1J" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/kindle-libelula.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                <p class="text-justify">Se acerca el torneo de las pieles y los pequeños reyes se movilizan para obtener una buena pieza que presentar. Derren, cazador de los Mil Reinos, acepta un trabajo por tres mil escudos de plata. Con el sable a la espalda, se embarca junto con otros cazadores en busca de la libélula, un monstruo que solo describen los rumores.</p>
+                <p class="text-justify">[Capítulos: 11; Palabras: 15162]</p>
+              </div>
+    
+              <div class="col-lg-4">
+                <a href="https://www.amazon.es/gp/product/B09JSMQFCQ" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/kindle-picosdelsol.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                <p class="text-justify">Perseguida por los suyos tras haber asesinado al jefe del clan, Furia se ve obligada a abandonar las Llanuras, su tierra natal. Sin saber adonde ir ni por donde empezar, se embarca hacia la península de los Picos del Sol, junto con otros dos forágidos de tribus distintas. ¿Qué aventuras aguardarán a estos tres llaneros en las tierras del Imperio de Suna?</p>
+                <p class="text-justify">[Capítulos: 11; Palabras: 18891]</p>
+              </div>
+    
+              <div class="col-lg-4">
+                  <a href="https://www.amazon.es/gp/product/B09JM2QLMK" target="_blank">
+                    <img class="img-fluid rounded" src="{% static 'imgs/kindle-escarabajos.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                  </a>
+                  <p class="text-justify">Tras ser traicionado momentos antes de accedes al trono y perderlo todo, Paul Val'Dore integra el movimiento rebelde de los Escarabajos, cuyo objetivo es, precisamente, acabar con la monarquía de Mohad.</p>
+                  <p class="text-justify">[Capítulos: 14; Palabras: 21970]</p>
+              </div>
+            </div><!-- /.row1 -->
+            <div class="row">
+              <div class="col-lg-4">
+                  <a href="https://www.amazon.es/gp/product/B09JLZZ5PX" target="_blank">
+                    <img class="img-fluid rounded" src="{% static 'imgs/kindle-jinetesdragon.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                  </a>
+                  <p class="text-justify">An Long es un muchacho marginado de Ha Gian, una pequeña aldea a las puertas del Khaz'Tiber. Tras la invasión de los darenís, An Long lo pierde todo. Todo menos su sueño. Y gracias a su perseverancia, logrará hacerse un sitio en las cumbres del Tiber, donde se forman los jinetes de dragón. Pero montar a dragón no es tarea fácil, y el adistramiento se ha llevado a muchos aprendices por delante. ¿Podrá el muchacho cumplir su sueño?</p>
+                  <p class="text-justify">[Capítulos: 12; Palabras: 19424]</p>
+              </div>
+              <div class="col-lg-4">
+                  <a href="https://www.amazon.es/gp/product/B09QZ23YJY" target="_blank">
+                    <img class="img-fluid rounded" src="{% static 'imgs/kindle-libromareas.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                  </a>
+                  <p class="text-justify">Totalmente dividida en centenares de grupúsculos, Mareas Rotas sufre una agresión militar por parte del reino vecino de Mohad. Con sus inexpertas tropas compuestas por pescadores y cangrejeros jugando a ser soldados, Vinardi decide plantar batalla. Los adeptos de la Luna no cejan en su empeño de controlar la marea, un poder que bien podría acabar con todo un ejército. Tras volver a su aldea, Bianca y sus amigos descubren que esta ha sido totalmente destruida por un maremoto y que los adeptos tienen algo que ver. Entonces inician un viaje hacia el sur con el fin de vengarse.</p>
+                  <p class="text-justify">[Capítulos: 18; Palabras: 33511]</p>
+              </div>
+              <div class="col-lg-4">
+                  <a href="https://www.amazon.es/gp/product/B0BKTXKHM5" target="_blank">
+                    <img class="img-fluid rounded" src="{% static 'imgs/kindle-colgante.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                  </a>
+                  <p class="text-justify">La secretista Sahelia ha muerto. Su legado, el colgante que usaba para convertir mentiras en verdades, ha quedado sin dueño. Un soldado de los Aasenborg está dispuesto a luchar por él en el Franja. Un hijo de Gaia lo necesita para poder llevar una vida tranquila. El infame mercenario Le Guen también anda detrás, mientras que dos gemelas ven en el colgante la oportunidad de salvar a su padre enfermo. Muchos mercaderes anhelan el poder del ópalo de Sahelia para desarrollar su negocio, pero probablemente sea la Iglesia Limerea la que más tenga que ganar en el asunto. ¿Quién se hará con el tesoro?</p>
+                  <p class="text-justify">[Capítulos: 8; Palabras: 18333]</p>
+              </div>
+    
+            </div><!-- /.row2 -->
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        <section id="saga">    
+            <div>
+                <h3 class="title mb-2">Saga - La Quinta Sombra</h3>
+                <p class="mb-2">Trilogía de la Quinta Sombra</p>
+            </div>
+            <div class="row">
+                
+              <div class="col-lg-4">
+                <a href="#" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/lqs_3d.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                  <p><strong>La Quinta Sombra</strong></p>
+                <p class="text-center">Muy Próximamente</p>
+              </div>
+                
+              <div class="col-lg-4">
+                <a href="#" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/mock_3d.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                  <p><strong>Secreto</strong></p>
+                <p class="text-center">Próximamente</p>
+              </div>
+                
+              <div class="col-lg-4">
+                <a href="#" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/mock_3d.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                  <p><strong>Secreto</strong></p>
+                <p class="text-center">No tan próximamente</p>
+              </div>
+                
+            </div><!-- /.row1 -->
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        <section id="independientes">    
+            <div>
+                <h3 class="title mb-2">Libros independientes</h3>
+                <p class="mb-2">Próximamente</p>
+            </div>
+            
+            <div class="row">
+                
+              <div class="col-lg-4">
+                <a href="#" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/etn_3d.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                  <p><strong>El Trono del Norte</strong></p>
+                <p class="text-center">Próximamente</p>
+              </div>
+                
+              <div class="col-lg-4">
+                <a href="#" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/mock_3d.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                  <p><strong>Secreto</strong></p>
+                <p class="text-center">Próximamente</p>
+              </div>
+                
+              <div class="col-lg-4">
+                <a href="#" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/mock_3d.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                  <p><strong>Secreto</strong></p>
+                <p class="text-center">Próximamente</p>
+              </div>
+                
+            </div><!-- /.row1 -->
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        <section id="otrosmundos">
+            <div>
+                <h3 class="title mb-2">Otros Mundos</h3>
+                <p class="mb-2">Trilogía de Gundolan - fantasía juvenil</p>
+                <p class="mb-2">Disponibles en Kindle y en Amazon en tapa blanda y tapa dura</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <a href="https://www.amazon.es/dp/B0BJQBFC5K" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/gundolan/vdf_3d.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                  <p><strong>Vientos de Fuego</strong></p>
+                <p class="text-justify">En un continente diezmado por incontables guerras fratricidas, cuatro grandes potencias comparten el poder de manipular los elementos. Tras el robo de una reliquia, Izar Lumera, recién ascendido a gunar en el país del viento, se verá envuelto en una aventura que lo arrastrará a tierras lejanas. En su camino deberá escoger entre vengarse o volver a casa, hasta que las cosas se compliquen y descubra que una gran amenaza se cierne sobre su país. Por si fuera poco, también deberá lidiar con el enigma que supone el origen de sus facultades, que está directamente relacionado con sus propios orígenes.</p>
+                <p class="text-center">[341 páginas]</p>
+              </div>
+
+              <div class="col-lg-4">
+                <a href="https://www.amazon.es/dp/B0BL2XKYX1" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/gundolan/lah_3d.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                  <p><strong>La Amenaza Helada</strong></p>
+                <p class="text-justify">Vuelan las noticias de los vientos fríos que azotan al noreste del continente. La amenaza que se cierne sobre el país del agua asusta a los dirigentes, pero no todos tienen las mismas prioridades. Izar y sus compañeros deberán mediar con los intereses políticos mientras se concentran en desentrañar los misterios que rodean a la amenaza helada y dar con la forma de enfrentarla. ¿Lograrán los kahndatos unirse para repeler el peligro que los acecha?</p>
+                <p class="text-center">[299 páginas]</p>
+              </div>
+                
+                <div class="col-lg-4">
+                <a href="#" target="_blank">
+                  <img class="img-fluid rounded" src="{% static 'imgs/gundolan/lpp_3d.png' %}" alt="Generic placeholder image" width="auto" height="300">
+                </a>
+                  <p><strong>Las Puertas de la Paz</strong></p>
+                <p class="text-center">Próximamente</p>
+              </div>
+
+            </div><!-- /.row1 -->
+        </section>
+    </div>
+{% endblock %}

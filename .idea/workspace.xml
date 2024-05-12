@@ -1,33 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="25423012-9a9a-4aac-95b8-9346ce204c7d" name="Changes" comment="" />
+    <list default="true" id="25423012-9a9a-4aac-95b8-9346ce204c7d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Edalom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Edalom.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Edalom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Edalom/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Edalom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Edalom/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templatetags/custom_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/templatetags/custom_filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/chapterChangeLD.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/chapterChangeLD.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/keepTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/keepTheme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/subtitleRandom.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/subtitleRandom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/tabsChange.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/tabsChange.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/zoomMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/zoomMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base_cuento.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_cuento.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cuentos/chanzaakros.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cuentos/chanzaakros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cuentos/shandriwa.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cuentos/shandriwa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/espacio_vip.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/espacio_vip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mundo/enciclopedia/hijorojo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mundo/enciclopedia/hijorojo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mundo/enciclopedia/historiacontemporanea.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mundo/enciclopedia/historiacontemporanea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mundo/enciclopedia/historiaolvidada.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mundo/enciclopedia/historiaolvidada.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mundo/enciclopedia/khaztiber.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mundo/enciclopedia/khaztiber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mundo/enciclopedia/mohad.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mundo/enciclopedia/mohad.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mundo/enciclopedia/otrasreligiones.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mundo/enciclopedia/otrasreligiones.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mundo/enciclopedia/religionjorolita.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mundo/enciclopedia/religionjorolita.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mundo/enciclopedia/religionlimerea.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mundo/enciclopedia/religionlimerea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/scratch.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/scratch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/subscribe/cancel.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/subscribe/cancel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/subscribe/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/subscribe/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vip/bienvenida.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vip/bienvenida.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vip/libro_dinamico.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vip/libro_dinamico.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vip/mi_cuenta.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vip/mi_cuenta.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2eKAIWQxz4yUDxbtKRJMUmrBE9E" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.Edalom.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/alber/PycharmProjects/Edalom",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alber\PycharmProjects\Edalom\templates\subscribe" />
+      <recent name="C:\Users\alber\PycharmProjects\Edalom\templates\vip" />
+      <recent name="C:\Users\alber\PycharmProjects\Edalom\templates" />
+      <recent name="C:\Users\alber\PycharmProjects\Edalom\static" />
+      <recent name="C:\Users\alber\PycharmProjects\Edalom\templates\mundo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Edalom" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Edalom" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Edalom.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
       </set>
     </attachedChunks>
   </component>
@@ -39,8 +144,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711642817136</updated>
-      <workItem from="1711642834240" duration="5000" />
+      <workItem from="1711642834240" duration="4361000" />
+      <workItem from="1711647709610" duration="830000" />
+      <workItem from="1711648557197" duration="3178000" />
+      <workItem from="1711711777511" duration="5138000" />
+      <workItem from="1711721497892" duration="7510000" />
+      <workItem from="1711819644828" duration="14497000" />
+      <workItem from="1711957140636" duration="19402000" />
+      <workItem from="1711983034319" duration="2106000" />
+      <workItem from="1712165835838" duration="2838000" />
+      <workItem from="1712176620469" duration="3684000" />
+      <workItem from="1712413578635" duration="8889000" />
+      <workItem from="1712484790214" duration="1106000" />
+      <workItem from="1712487793415" duration="9287000" />
+      <workItem from="1712944762314" duration="5411000" />
+      <workItem from="1713034646174" duration="2375000" />
+      <workItem from="1713544973150" duration="6285000" />
+      <workItem from="1713599910743" duration="15220000" />
+      <workItem from="1713696481401" duration="12981000" />
+      <workItem from="1714413482802" duration="923000" />
+      <workItem from="1714496709473" duration="25000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

@@ -1,10 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base_articulo.html' %}
+{% load static %}
+
+
+{% block title %}
+    Región de Mohad - Enciclopedia
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/edalom/mohad.jpg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/edalom/mohad.jpg' %});
+    }
+    .justify {
+        text-align: justify;
+    }
+    .center {
+        text-align: center;
+    }
+    
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Mohad</h1>
+        <i><p class="header-subtitle">En las arenosas tierras de Mohad fue donde floreció la civilización que más hizo prosperar a la humanidad. Sus numerosos inventos en campos como la irrigación, el transporte y el comercio hicieron ricos a los mohadís. Sus gentes de tez tostada se establecieron en torno a los lagos más grandes, creando ciudades inmensas y llenas de vida, donde todo buen mercader deseaba instalarse un tiempo.</p></i>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container page-container justify">
+    <div class="col-md-12 blog-main">
+        <section id="historia">
+        <h1 class="title center">Historia</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        <h3 class="subtitle">La Edad Dorada</h3>
+          <p>Los historiadores de renombre coinciden en situar el principio de Mohad tras la Revolución que acabó con los siglos de ocupación heterocroma. Durante el periodo que siguió se sucedieron un sinfín de descubrimientos que ayudaron al territorio a recuperarse y prosperar a un ritmo mucho mayor que el de los territorios vecinos. Aportaron avances en todos los campos, desde la escritura hasta la minería. Desde la irrigación hasta la astronomía. Incluso innovaron en la forma de gobierno, pues el Corazón de Ley dictaba que el trono se adjudicaría siempre mediante un acuerdo entre las dos familias más ricas de las cuatro grandes ciudades, las cuatro Vals.</p>
+          <p>Esa superioridad sobre las demás civilizaciones permitió a los sucesivos reyes conquistar más y más tierras, hasta que el reino se convirtió en un Imperio regido con mano de hierro por la dinastía de los Val'Dore. Fue entonces cuando el trono pasó a ser hereditario, pese a la oposición inicial de los jueces y las otras familias poderosas. En su máximo apogeo, el Imperio de Mohad contó con la totalidad de las tierras de los Mil Reinos y Mareas Rotas, pero también tomó el control total de la Bahía de los Susurros y alguna zona del norte de los actuales Dominios de Lor Horn.</p>
+        <h3 class="subtitle">La Desintegración</h3>
+          <p>El señoreaje, un truco utilizado por varios emperadores para enriquecerse a costa de sus súbditos, o así fue visto por estos, acabó provocando la rebelión en los Mil Reinos. Al ver que liberarse de Mohad era posible, Mareas Rotas logró organizarse lo suficiente para alzarse en armas igualmente. Dareniel, habiendo recuperado su retraso tecnológico gracias al juego del espionaje, logró hacerse con la parte norte de la Bahía de los Susurros. Finalmente, Lor Horn recuperó las zonas que consideraba como suyas, sin apenas oposición, en las horas bajas del Imperio de la Arena.</p>
+          <p>Fue entonces cuando los últimos emperadores de la dinastía de los Val'Dore dejaron de otorgarse ese título y pasaron a denominarse monarcas. Mohad volvió a ser un reino, y se conformaron con eso.</p>
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        <section id="economia">
+        <h1 class="title center">Economía</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+          <p>El escudo es la unidad monetaria de Mohad, y es aceptado en todo su territorio así como en los Mil Reinos y Mareas Rotas, vestigio de los tiempos de los emperadores. Existen escudos de hierro, bronce, plata y oro. Con la llegada de los bancos, industria controlada por los Val'Detignes, la gente rica ha empezado a caminar por las calles con papeles en lugar de pesadas bolsas de dinero.</p>
+          <p>Económicamente, el territorio está dividido. En primer lugar, los más ricos viven en las cuatro Vals. Las cuatro grandes ciudades que vertebraron el Imperio de la Arena tienen un lado oscuro, que suele verse al otro lado de las murallas exteriores. En los arrabales de las grandes urbes es donde se encuentra la pobreza más cruda, sinónima de desnutrición y enfermedad. Las pequeñas ciudades gozan de mayor igualdad, y por lo general los ricos no necesitan la protección de muros y escoltas.</p>
+        <h3 class="subtitle">Impuestos</h3>
+          <p>Cuando la corona se decidía por las familias más ricas de las cuatro Vals, las arcas del Estado eran controladas por las mismas. Se tenía especial cuidado en que el dinero de esas arcas no acabara aumentando el patrimonio de la familia real, y que sirviera para garantizar unos bienes públicos de calidad. Sin embargo, cuando el trono pasó a ser hereditario con el Imperio, ese control se perdió, y la política fiscal cayó en manos exclusivas del soberano. Así, los Val'Dore impusieron nuevos impuestos y aumentaron los existentes. Concedieron exoneraciones a la Iglesia Limerea para así ganarse el favor del Patriarca.</p>
+        <h3 class="subtitle">Recursos</h3>
+          <p>En cuanto a los bienes y la producción de las tierras de Mohad, se comercia enormemente con la seda y telas derivadas como tul o encaje. Las especias también son uno de los bienes más cotizados. Gracias a su avanzada técnica, los artilugios de todo tipo fabricados allí se venden muy bien en cualquier parte de Edalom. Aunque en lo referente al acero, la calidad de las armas de los norteños darenís tiene mejor fama.</p>
+          <p>La lagrimazul se ha convertido en una lacra para el reino, con numerosos grupos que han adquirido gran poder y riqueza haciendo contrabando con esta sustancia prohibida. Se trata de una droga muy cotizada en el exterior, pues hace que quien la toma se sienta en un limbo durante casi todo un día, antes de recaer en una profunda pero corta depresión. Es extremadamente adictiva.</p>
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        
+        <section id="sociedad">
+        <h1 class="title center">Sociedad</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+          <p>Debido a su glorioso pasado, el mohadí de ciudad es una persona orgullosa de sus raíces. Aunque nadie haya podido rescatar la antigua lengua, los nombres (de ciudades o personas) aún conservan los sonidos de sus antepasados. Algunas tradiciones se conservaron.</p>
+        <h3 class="subtitle">Trabajo</h3>
+          <p>Al considerarse inventores de la mayoría de los avances del mundo, los mohadís tienden a ser muy creativos e independientes. Aborrecen al holgazán y en general son muy trabajadores. Los oficios más nobles son aquellos ligados a la ciencia. Su actual declive militar ha afectado a la imagen de los trabajos de dicha industria. Cada vez son más los que se interesan por el arte, en especial los trabajos con la sal y la arena. La ganadería usa principalmente a los camélidos, cuya carne satisface a la mayoría de los habitantes. Las industrias más fuertes del reino son ahora la seda y las especias, y sus gremios son los que más pesan a la hora de tomar decisiones comerciales.</p>
+        <h3 class="subtitle">Vestimenta</h3>
+          <p>La seda mohadí es la de mejor calidad, y por tanto la más cara del continente. En Mohad, sin embargo, la tela es asequible, por eso la clase media se pasea por las calles con túnicas y vestidos de seda de todos los colores. A partir de la seda se elaboran prendas de tejidos más complejos, como blusas de encaje o adornos de tul. El lino y el algodón se importan de Suna, El Creciente o incluso de Alderion. Aunque el calor favorezca a las telas finas, también existen ropas más abrigadas de lana de camello.</p>
+          <p>En los arrabales y pequeñas heredades de Mohad, las túnicas se llevan sin bolsillos y con cordones para cerrar el cuello. Todos aquellos que lleven bolsillos son considerados ladrones.</p>
+        <h3 class="subtitle">Gastronomía</h3>
+          <p>La industria sedera no solo provee de ropajes; también está presente en el sector gastronómico. Si bien antaño era un aperitivo popular, hoy en día los Sederos han logrado conferirle la rareza necesaria para que se considere como un manjar: el gusano de seda, ya sea hervido, frito o triturado en salsa es, al kilo, el alimento más caro del territorio.</p>
+          <p>El nopal es un tipo de cáctus cuyo tallo se usa en cocina para hacer ensaladas principalmente, con sésamo y cilantro, mientras que su fruto, el tuno, se come más bien de postre o mermelada. También se usa para hacer infusiones cuya ingesta alivia la tos y la migraña. Existen varias variedades de cactus que sirven para hacer aceite, que se exporta muy bien.</p>
+          <p>La carne de camello es muy común, mientras que la de dromedario es un poco más cara. Se suele comer con zumaque, una especia rojiza que se espolvorea sobre la carne y le confiere un sabor ligeramente picante y a limón. Otra especia popular es el comino negro, cuyo sabor amargo se suele combinar con pasteles diversos y sobre todo con el queso. Los olivos son frecuentes en las zonas secas, y las aceitunas se comen con especias o rellenas de carne.</p>
+          <p>En cuanto a las bebidas típicas de la región se encuentran el tequila, un alcohol fuerte que se hace a partir del agáve, y la cerveza negra. A partir de una mezcla de diversos cáctus, los pueblos del desierto elaboraban una bebida medicinal que servía para curar mediante el espíritu, pero su receta se perdió con ellos.</p>
+        <h3 class="subtitle">Transporte</h3>
+          <p>Las carrozas tiradas por camellos son el transporte de los mercaderes, ya que pueden recorrer distancias más largas que los caballos a costa de avanzar más lentamente. Los caballos son más escasos en la región, y la mayoría se destinan al ejército. Los más adinerados son los únicos que pueden permitirselos, aunque existen excepciones. El transporte en lagos se efectúa principalmente en barcas planas y de madera.</p>
+        <h3 class="subtitle">Grandes Casas</h3>
+          <p>La Casa de los Val'Dore es una de las más antiguas, remontándose su existencia a los años del yugo heterocromo en la ciudad de Val'Fleus. Al haber gobernado con puño de hierro durante siglos y haber logrado convertir un trozo de desierto en un imperio, el apellido tiene un aura especial. Es, históricamente, la familia más rica del sur de Mohad.</p>
+          <p>Los Val'Dargant fueron, hasta la ascensión de los Val'Dore, la familia más rica de todo Mohad. Estos tienen sus negocios en la ciudad de Val'Monde, la capital, convirtiéndolos eso sí en la familia más adinerada del Este del país.</p>
+          <p>Los Mont'Arbre se enraizaron en el norte, en la ciudad de Val'Havre. Siempre trataron de mantener relaciones buenas o neutrales con toda familia poderosa, incluso con los comerciantes más importantes de Dareniel, el país enemigo. Eso último les trajo algún que otro problema.</p>
+          <p>Los Val'Detignes se han convertido en los últimos años en la familia más adinerada del Oeste del desierto. Su ascensión se debe a la llegada de los bancos. Ellos instauraron el primero en su ciudad, Val'Lacq.</p>
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        
+        <section id="cultura">
+        <h1 class="title center">Cultura</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        <h3 class="subtitle">Tradiciones</h3>
+          <p>La más antigua de todas las tradiciones proviene de la forma en que se resolvían las disputas siglos atrás: el círculo de arena. Hoy en día es despreciada por la corte y la alta sociedad, pero en los barrios bajos, y sobre todo en la Orilla Fangosa, todavía se resuelven muchos conflictos de esta manera. Proveniente del desierto, la tradición cobró fuerza cuando los hijos de la arena construyeron las primeras ciudades. Como no podían dibujar un círculo de arena improvisado en las calles de las ciudades, decidieron construir recintos que conformarían las zonas de duelo para ese fin. Las luchas en el círculo de arena son hoy un espectáculo que amansa a los pobres y les permite ganar o perder algo de dinero en las casas de apuestas que florecen en torno a los estadios. Una de las razones por las cuales siempre se ha permitido es porque sirve para acabar con bandidos y reclutar a soldados con habilidades excepcionales.</p>
+        <h3 class="subtitle">Arte</h3>
+          <p>Las estatuas de arenisca y trabajos con sal son algunas de las piezas más comunes en el arte mohadí. Suelen representar a Limeres u otras figuras religiosas. La música es apreciada por todos, en especial los instrumentos de viento y por excelencia el violín.</p>
+        <h3 class="subtitle">Ciencia</h3>
+          <p>Mohad cuenta con una ciudad universitaria en Val'Fleus, al sur del país. Allí estudian los hijos de los más nobles, pues hay pocas plazas y el coste es prohibitivo para cualquier familia de clase media. Los estudios están centrados sobre todo en la agricultura, la disciplina militar, la teología...</p>
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        
+        <section id="religion">
+        <h1 class="title center">Religión</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        <h3 class="subtitle">Tradición Limerea</h3>
+          <p>Todo el país fue bautizado en la era de las primeras cruzadas. La represión de las demás religiones que cohabitaban en paz fue brutal, y todas acabaron por extinguirse. Hoy en día todos siguen al Pontífice, jefe supremo de la religión limerea y que vive en la Gran Catedral de Limeres.</p>
+        <h3 class="subtitle">Discípulos de Seth</h3>
+          <p>En el desierto, sin embargo, subsistió un grupo de fanáticos que rendían culto a un Dios desconocido: Seth. Algunos dicen que su misión es llevar ante Seth a todos los traidores que renunciaron a su religión, y para ello los devuelven a la arena, enterrándolos vivos en el desierto. Así nacen los espíritus de arena.</p>
+        <h3 class="subtitle">Muerte</h3>
+          <p>Como la gran mayoría de las sociedades asimiladas por la ideología de la Gran Rebelión cuando se alzaron contra el yugo heterocromo, los mohadís creen ahora en lo que rezan los sacerdotes limereos, es decir, el viaje al purgatorio donde Limeres decide si el alma es suficientemente ligera como para abrirle paso a Eternia o si de lo contrario la envia al Averno Tormentoso.</p>
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        
+        <section id="geografia">
+        <h1 class="title center">Geografía</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        <h3 class="subtitle">Ecosistema</h3>
+          <p>El clima mohadí es, por lo general, bastante incómodo. Durante el día, el calor es constante incluso a orillas de los lagos. La humedad de esas zonas es propicia para la multiplicación de insectos y mosquitos que a menudo transmiten la Fiebre Roja. Durante la noche, el frío solo afecta al desierto, donde vagan los condenados por unos días antes de morir de inanición.</p>
+        <h3 class="subtitle">Fauna</h3>
+          <p>En el desierto viven varios tipos de serpientes, de los cuales el más temido es la serpiente de cascabel, por su veneno mortal. Camellos, dromedarios, coyotes, dingos, antílopes, varios tipos de lagartos, avestruces, jerbos... Los alacranes pueden aparecer tanto de debajo de las dunas como sobre los tejados de las ciudades. En las ciudades abundan los perros y gatos salvajes.</p>
+          <p>En los lagos se crían truchas y salvelinos. Los peces salvajes se pescan desde las típicas barcas llamadas "batous", con unas redes semirrígidas.</p>
+        <h3 class="subtitle">Flora</h3>
+          <p>Esencialmente compuesta por especies de cáctus y agáves.</p>
+        <h3 class="subtitle">Geología</h3>
+          <p>Además de que llueve poco, el suelo mohadí no es demasiado feraz, de modo que los agricultores buscaron diversas soluciones para enriquecer sus tierras, como usando lombrices, añadiendo excremento de camello o cáscara de huevo.</p>
+        <h3 class="subtitle">Ciudades</h3>
+          <p><strong>Val'Monde</strong></p>
+          <p>Situada a orillas del lago Danesi, la capital de Mohad gozó antaño del privilegio de ser el faro del mundo. La ciudad más próspera y avanzada de todo el continente. Sus edificios mastodónticos impresionaban hasta a los que venían con intenciones invasoras. La Torre del Aura buscando arañar el cielo con su enorme aguijón, la Gran Catedral de Limeres cuyo Pento en lo alto parece capaz de detener un huracán; el Archivo de los Tiempos, que guardaba la memoria del mundo hasta que los heterocromos incendiaran varias de sus estancias; la Casa de los Susurros, completamente hermética y aislada de todo edificio, rodeada por un pequeño bosque al que ni el más loco osa acercarse.</p>
+          <p>Desde Val'Monde se gobernaba el Imperio de la Arena, y aún todavía se gobierna el reino actual desde la Fortaleza Flotante, un imponente castillo de piedra rosa, lutita y arenisca en medio del lago. Sus cinco torreones hexagonales se alzan como imponentes juncos titanescos nacidos de las profundidades. El conjunto de puentes, arquerías y túneles forman un espléndido y ordenado laberinto. Sus altos muros brotan de las aguas mansas y están tachonados de troneras que otean las cercanías con una leve nota de advertencia. Desde allí se disfruta de una vista completa de toda la ciudad, del lago y hasta se atisba el lejano mar de dunas.</p>
+            <p><strong>Val'Lacq</strong></p>
+          <p>A orillas del lago Nemara, el más occidental del país, y entre las dos cordilleras que cierran el reino del Imperio Suná se encuentra la ciudad de Val'Lacq. Los Val'Detignes gobiernan la ciudad desde la Casa Naranja. Con la rápida expansión del sector bancario, controlado por la familia gobernadora, los Val'Detignes, la ciudad ha conocido unos años de prosperidad inusitada que la han puesto casi a la altura de Val'Monde. Por el hecho de estar cerca de ambas cordilleras, en la ciudad pululan los mineros en época de descanso, así como los magnates de los minerales.</p>
+          <p>Al oeste se encuentra la Torre del Halcón con su enorme reloj solar visible desde casi cualquier punto de la ciudad. En el centro, la plaza de armas, está la fuente de los camellos. A un lado de la plaza se puede encontrar el gran Banco Central, con su pesada cúpula dorada; en frente está el edificio del Gremio de los Mineros. La Basílica del Voto Sagrado, a dos cuadras del Mercado, da las campanadas a cada hora. Tiene el pento más trabajado de todo Mohad.</p>
+          <p><strong>Val'Havre</strong></p>
+          <p>Es la ciudad más norteña, y la única que da al mar. Alberga los astilleros del país y el puerto de la Bahía de los Susurros donde descansa la flota de Mohad. Su cercanía con la frontera de Dareniel y las tierras en disputa han hecho que se fortifique prácticamente hasta lo inexpugnable.</p>
+          <p><strong>Val'Fleus</strong></p>
+          <p>Es la ciudad más sureña, y la más alejada. Por eso, y por la presencia de la Universidad, es también conocida como la ciudad de los placeres. Su cercanía con los Dominios de Lor Horn la hacen especial, pues se pueden encontrar objetos extraños de las tierras prohibidas del sur del continente.</p>
+        </section>
+        
+    </div>
+</div>
+        <hr>
+{% endblock %}

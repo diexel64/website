@@ -1,10 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base_cuento.html' %}
+{% load static %}
+
+
+{% block title %}
+    La Chanza de Akros - Cuentos de Edalom
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/cuentos/chanzaakros.jpeg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/cuentos/chanzaakros.jpeg' %});
+    }
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">La Chanza de Akros</h1>
+        <i><p class="header-subtitle">Akros, el Dios creador, envía a uno de sus cerberos a una misión muy especial: encontrar a Timoror en las cumbres de Las Escondidas.</p></i>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+        <section>
+        <div id="chanzaakros">
+          <p>Mi primer día de trabajo. Oh, ¿cómo iba a olvidarlo? Yo suponía que montaríamos guardia en torno a las cadenas que había jurado proteger, pero Akros nos mandó a las remotas Cumbres Escondidas, el muy mamón. ¿Quién iba a imaginarse que los dioses tuvieran tanto humor? Pues sí, a nosotros nos creó el más bromista de todos.</p>
+          <p>Ahí estábamos pues, en esa traicionera pista de hielo que era el Glaciar de los Confines, con Nik babeando baba helada sobre mi cuello y Kan estornudando y rociando mi oreja derecha de mocos viscosos. Huelga decir que nuestras patas no estaban hechas para el hielo y nuestro pelaje menos para la nieve. ¿Y qué comeríamos? ¡Joder, qué frío!</p>
+          <p>Nuestro desternillante creador nos dijo que para volver a Colmillos Verdes tendríamos que encontrar al temible Timoror. Lo describió vagamente: un monstruo horroroso capaz de matar con varias hileras de dientes como púas y hasta con su propio vómito. Noté el impulso de mis heces queriendo salir, sin duda fruto del miedo que sintió Nik en ese momento. Siempre ha sido un cagao.</p>
+          <p>Nos pusimos al tajo en cuanto Akros hubo desaparecido con esa sonrisa ladina. Empezamos nuestras pesquisas de la forma más natural: preguntando. Al inicio, nos dimos de cabeza contra el fracaso. Con las tres cabezas.</p>
+          <p>Cuando preguntamos al cuervo, revoloteó nervioso unos segundos, le palidecieron las plumas y se largó graznando asustado. Patinando torpemente hacia el Pico del Amanecer nos topamos con una marmota. Ella también salió por patas, y aunque podíamos haberla cazado sin derramar una sola gota de sudor, ninguno de nosotros quería desayunar algo cuyos gases apestaban como los del volcán de Limeres. Decidimos cambiar de estrategia y preguntar a bichos menos asustadizos.</p>
+          <p>Fue entonces cuando partimos a las Grietas, allá donde viven los osos garrablanca. Tras varias horas de soledad y muchos resbalones, encontramos una cría a la que Kan ladró un saludo tan desesperado que la pobre huyó aprisa al resguardo de su madre. Ella, al principio hostil por el pequeño trauma que supusimos para su hija, fue la primera que nos intentó ayudar tras explicarle yo nuestra situación.</p>
+          <p>- Timoror... Jamás lo oí mentar, me temo. Pero podríais probar suerte al oeste, en los Lagos de Reflejos, ahí los lobos montañeses cazan bichos grandes. Seguro que ellos saben algo.</p>
+          <p>Y luego de un agradable almuerzo en el que no tuvo reparo en compartir la caza, nos dejó echar la siesta en su humilde morada como buena anfitriona. Cosa rara, la fauna suele ser fría en el norte.</p>
+          <p>Nos despedimos con energías renovadas, salvo Kan que no había comido. Esa idiotez suya de hacerse vegetariano... En fin. Nos llevó largo rato llegar hasta los lagos. Hambre, frío, cansancio. Tiritonas. Tropiezos. Picores. Y esa puta garrapata que había salido de ninguna parte y se pasaba el día chupando sangre de nuestra panza. Pero al fin aparecieron los lagos. Uno de ellos reflejaba un lobo solitario a su vera. Nos acercamos esperanzados.</p>
+          <p>- ¡Vaya, jamás había visto un perro de tres cabezas! ¿Qué te trae por este valle de lobos, forastero? -nos aulló.</p>
+          <p>- Estamos buscando un monstruo y nos han dicho los osos garrablanca que quizá aquí encontráramos ayuda. Se trata de Timoror, ¿has oído hablar de él?</p>
+          <p>- Timoror... No conozco ese nombre. Pero a los lobos no nos importan mucho los nombres. Un monstruo, dices... Puede que se trate del Yeti, que vive más allá de esos picos. Se pasa la vida durmiendo, y cuando ronca muy fuerte hay que cuidarse de las avalanchas.</p>
+          <p>Y sin más pistas que esa proseguimos en nuestro encargo, al borde de la hipotermia. Para colmo la dichosa garrapata no se cansaba de chupar. Dejé de sentir nuestras patas, que se movían por pura inercia hacia la temida Brecha del Silencio, supuesta morada del Yeti. Tronaba una tormenta cuando por fin pudimos verla a lo lejos, pero sin rayos y un cielo plagado de estrellas. Los truenos cesaron al alba, y al fin logramos ascender hasta aquella brecha que nos mostraba las entrañas rocosas de la montaña nevada. Nos adentramos.</p>
+          <p>La cueva era exageradamente espaciosa, pero no impidió las quejas de Nik. Es claustrofóbico... Un olor a tortuga emanaba de las lámparas de aceite. Había todo tipo de garrotes anchos como troncos, peines de hueso grandes como nuestras cabezas, cuencos de piedra, odres con un extraño líquido viscoso y cosas cuya utilidad resultó ser un enigma imposible. Era evidente que el lugar estaba habitado, pero el Yeti no estaba ahí. Como era nuestra única pista, decidimos esperarlo en su propio hogar, aun a riesgo de enojarlo un poco. Agotados como estábamos de nuestro periplo, nos dormimos al punto.</p>
+          <p>El despertar fue uno de los más horrorosos que recuerdo de toda mi vida. Un berrido que retumbó en la cueva y que se vio intensificado por el grito que pegó Kan en mi oreja derecha. El dolor de cabeza que siguió al instante fue horrible, provocado por la lucha de nuestros tres cerebros intentando zanjar el desacuerdo para gobernar las piernas: yo quería levantarme y plantarme firmemente frente a ese gigante peludo; ellos salir por patas. Sin embargo, contra todo pronóstico, fue el Yeti quien se alejó bramando horrorizado.</p>
+          <p>- ¡Tú otra vez no! ¡Me iré, Timoror, piedad! ¡No me persigas más, te lo suplico!</p>
+          <p>Fue entonces cuando noté el olor fecal, y comprobé con alivio que no era cosa nuestra. El Yeti nos había dejado un regalito.</p>
+          <p>Aunque ya no podíamos con nuestra alma, inspeccionamos la cueva a fondo para hallar al tal Timoror, pero fue en vano. Resignados a quedarnos en aquel desierto helado para siempre, nos acomodamos en el lugar. Se me ocurrió usar uno de los peines del Yeti para rascarme la panza y...</p>
+          <p>- ¡Ayyy! ¿Es que es mucho pedir un poco de tacto?</p>
+          <p>La voz desconocida nos sobresaltó. ¿Quién más andaba ahí? Entonces caí en la cuenta. Me entraron ganas de estrangular a nuestro querido Dios.</p>
+          <p>- ¿Cómo te llamas, garrapata?</p>
+          <p>- Oh, disculpad mis malos modales. Soy Timoror, ¡encantado!</p>
+        </div>
+        </section>
+    </div>
+</div>
+        <hr>
+{% endblock %}

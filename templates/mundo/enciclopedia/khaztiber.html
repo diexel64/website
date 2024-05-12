@@ -1,10 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base_articulo.html' %}
+{% load static %}
+
+
+{% block title %}
+    Región del Khaz'Tiber - Enciclopedia
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/edalom/khaztiber.jpg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/edalom/khaztiber.jpg' %});
+    }
+    .justify {
+        text-align: justify;
+    }
+    .center {
+        text-align: center;
+    }
+    
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Khaz'Tiber</h1>
+        <i><p class="header-subtitle">Las aldeas que aparecieron de repente en las abruptas laderas del Fan Si Fana, la cordillera más alta del mundo, son relativamente recientes. Fueron los exiliados pacifistas de todas las partes del mundo los que, desgastados por la infernal espiral de guerra y violencia que sufría el continente, decidieron empezar desde cero en un lugar donde la guerra no los pudiera alcanzar.</p></i>
+        <div class="tabs">
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('historia')">Historia</button>
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('economia')">Economía</button>
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('sociedad')">Sociedad</button>
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('cultura')">Cultura</button>
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('religion')">Religión</button>
+          <button class="btn btn-theme-color modal-toggle" onclick="openTab('geografia')">Geografía</button>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container page-container justify">
+    <div class="col-md-12 blog-main">
+        <section id="historia" class="tabcontent">
+
+        <h1 class="title center">Historia</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <h3 class="subtitle">La Convergencia</h3>
+            <p>Miles de años atrás, los humanos convivían con poderes de otros planos. Los dioses estaban más presentes, y las criaturas feroces acechaban en todas las esquinas. Pero de todos, los más peligrosos eran ellos mismos. Eso entendieron varios grupos de humanos, que decidieron buscar un lugar aislado del mundo para vivir en paz. Seguridad a cambio de comodidad. Las montañas más altas del mundo los recibieron con sus vertientes peladas, sus vientos fríos, sus cuevas heladas y una promesa de protección.</p>
+            <p>Uno de los objetivos que tenían en común todos los pacifistas era la creación de una nueva lengua. La intención era borrar del vocabulario las palabras más peligrosas. Funcionó durante un tiempo y vivieron en paz durante varias décadas. Hasta que, poco a poco, la inmigración recuperó las palabras otrora olvidadas.</p>
+            <h3 class="subtitle">El nacimiento de los dragones</h3>
+            <p>Tras crear a los dragones con la ayuda de las guardianas del fuego y del aire, Akros se los llevó de la Perla a otro de sus mundos. La paz había vuelto al mundo y no se iban a volver a necesitar dragones enseguida. La decisión de erradicar a los dragones de la faz de la Perla le provocó muchos quebraderos de cabeza, y al final se arrepintió. Antes de abandonar su preciado mundo, Akros decidió delegar tres huevos de dragón a Pondara, que los guardó en una caja que le regaló una de las guardianas.</p>
+            <p>Pondara era viuda y vivía en soledad en una cueva alejada de la civilización, tal y como le había pedido su dios. Akros e Ileria Ignos acordaron que solo alguien especial y con buenas intenciones podría abrir la caja. Ese alguien fue Darwen Ojorrojo. Con sus tres crías de dragón, Darwen fundó el gremio de los criadores de dragón, cuyo objetivo era principalmente el estudio de esas criaturas.</p>
+            <h3 class="subtitle">El Gremio de los Jinetes de Dragón</h3>
+            <p>Pocos años hicieron falta para que los criadores se convirtieran en jinetes y el gremio adaptara su nombre en tal sentido. Los dragones crecieron rápido, y los dos machos, Tiranior y Volaghar, fecundaron a la hembra Rinalian. De ahí salieron dos dragones hembra. Los dragones crecían tan rápido que a los tres años ya eran capaces de portar a un jinete en su lomo, y a los cinco ya alcanzaban un tamaño medio. Si bien nunca dejan de crecer, su ritmo de crecimiento es regresivo y tiende hacia el cero.</p>
+            <p>Enseguida el Khaz Dolu ordenó la creación de un cuerpo de élite para repeler los ataques darenís. Darwen Ojorrojo fue nombrado maestro del Fuego, a pesar de ser extranjero. Su hijo, Aaron Ojorrojo, cabalgó sobre Tiranior, pero era un chico desequilibrado y, tal y como le había advertido Pondara, abandonó el gremio por las malas y se suicidó tras incendiar por completo una ciudad. Todo por amor. Fue entonces cuando se establecieron las reglas de entrada para convertirse en jinete. El poder de los dragones solo debía de ser usado para defender el Tiber, jamás para conquistar tierras ajenas.</p>
+            <h3 class="subtitle">Enclave Darení</h3>
+            <p>Este articulo está siendo debatido para mayor objetividad.</p>
+            <p></p>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        </section>
+        <section id="economia" class="tabcontent">
+        <h1 class="title center">Economía</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p>El dragón es la unidad monetaria del Tiber, y solo se acepta en la cordillera del Fan Si Fana. Existen dragones de pirita, de plata y de oro. Al principio los dragones de plata eran los más valiosos, dado que la plata era más escasa en el Tiber. Sin embargo, con la apertura del comercio, los Maestros se dieron cuenta de que el oro era más valorado por las otras potencias, de modo que los intercambios relegaron la plata a la segunda posición.</p>
+            <p>Solo hay una ciudad grande en las faldas del Fan Si Fana, la capital: Do Shoi. Allí viven todos los más adinerados, que en realidad son un grupo cerrado de cargos importantes. Todos los cargos importantes tienen que ver con los dragones, las forjas y las minas. En las aldeas se disfruta de una igualdad muy equilibrada, pues los más ricos deben hacer mayores ofrendas para mantener su nivel de riqueza.</p>
+            <h3 class="subtitle">Impuestos</h3>
+            <p>Todos los trabajadores lo hacen para el Khaz Dolu, a quien veneran incondicionalmente. Es su Protector, y hagan el trabajo que hagan, el jornal es el mismo (por hora trabajada), con algún margen por trabajos duros e incómodos. La idea de impuestos es por ello distinta en el Tiber, donde no son los ciudadanos los que dan una parte de su salario al Estado, sino que es el Estado el que da de lo suyo al ciudadano. Porque todo pertenece al Khaz Dolu.</p>
+            <p>Por eso no hay desigualdad, a parte de los cargos más importantes ligados al Khaz Dolu en Do Shoi, pues requieren de más dinero para sus viajes y seguridad. La desigualdad viene de la notoriedad y la proximidad con el Khaz Dolu, no de las finanzas</p>
+            <h3 class="subtitle">Recursos</h3>
+            <p>En cuanto a los bienes y la producción de las tierras tibereñas, se comercia enormemente con el mineral que sacan de las entrañas de la cordillera más alta del mundo. Tienen más de quinientos tipos de arroz, aunque solo una docena de granos están destinados a la exportación. Si bien el acero darení tiene la mejor reputación, el Khaz’Tiber realiza las mejores aleaciones, ya que puede experimentar con diversos minerales gracias al fuego de dragón en la Forja. También comercian con el vidrio de gran calidad que fabrican con ayuda de crías de dragón. Antaño, el Maestro del Fuego establecía los cupos para vender lágrimas de dragón, pues prácticamente podían curarlo todo. Una sola lágrima podía valer más que un palacio. Como la paz reina en el Tiber, los dragones ya no lloran, pero la ley sigue siendo la misma.</p>
+            <p>A pesar de la veneración que le tienen a los dragones, algunos bandidos, llamados agarradores, se dedican a cortarles las garras mientras duermen, a arrancarles los colmillos o incluso serrar los cuernos en caso de que tengan. Huelga decir que dicha actividad es extremadamente arriesgada. La mayoría de los agarradores muere antes de los treinta veranos y no requiere de entierro, basta una vasija. El marfil de dragón es el material más caro del continente.</p>
+
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        </section>
+        <section id="sociedad" class="tabcontent">
+        <h1 class="title center">Sociedad</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <p>Étnicamente hablando, el tibereño es de rasgos variados, pues allí se asentaron pacifistas de todas las regiones del continente en guerra. Hablan el Khaaz, un idioma que respira paz y tranquilidad, acorde con el estilo de vida del Tiber. Existen varias tradiciones cuyo origen es desconocido porque las trajeron desde los cuatro rincones del mundo.</p>
+
+            <h3 class="subtitle">Trabajo</h3>
+            <p>El trabajo en el Khaz'Tiber está intrínsecamente ligado a la cultura y los valores de la sociedad. Los tibereños tienen una relación especial con su trabajo, considerándolo una contribución al bienestar de la comunidad y una expresión de sus creencias animistas y espirituales.</p>
+            <p>La mayoría de los tibereños trabajan para el Khaz Dolu, considerado el sumo Protector. Independientemente del oficio, cada trabajador contribuye a la sociedad y recibe un jornal por hora trabajada. El Khaz Dolu se encarga de garantizar la igualdad salarial, lo que significa que todos los trabajadores reciben el mismo pago por su tiempo, con ajustes por trabajos particularmente difíciles o incómodos. Esta filosofía refuerza la noción de comunidad y unidad en el Khaz'Tiber.</p>
+            <p>Los tibereños tienen la oportunidad de elegir su trabajo, y aquellos que no lo encuentran por sí mismos son asignados a trabajos temporales y se les brinda la oportunidad de cambiar si no están satisfechos. Esta flexibilidad en la elección del empleo permite a los habitantes explorar diferentes roles y contribuir a la sociedad de maneras diversas.</p>
+            <p>Debido a la importancia de los dragones en la cultura tibereña, los oficios relacionados con el fuego son altamente valorados. Los jinetes de dragón son considerados entre los mejores hombres y mujeres del país, y su trabajo no solo es crucial para la defensa del Khaz'Tiber, sino también para el estudio y la relación con estas majestuosas criaturas. Los artesanos que trabajan en las forjas y las minas también desempeñan un papel esencial en la economía, creando productos de calidad a partir de los minerales extraídos de las montañas. Gran parte de la población se dedica a trabajos agrícolas, especialmente en los arrozales. Los ñus, animales de tiro, ayudan a arar la tierra de manera tradicional. Los campos de arroz son una parte esencial de la vida y el paisaje tibereño. Por otro lado, los médicos tibereños son especialmente valorados por el Khaz’Dolu porque conservan un conocimiento milenario sobre las fuerzas energéticas que no existe en otros territorios.</p>
+            <p>En el Khaz'Tiber, el trabajo no solo se ve como una forma de ganar sustento, sino como una contribución a la comunidad y a veces como una expresión de los valores espirituales.</p>
+
+            <h3 class="subtitle">Vestimenta</h3>
+            <p>La vestimenta en el Khaz'Tiber está influenciada por su geografía diversa y su clima variado. Los habitantes han desarrollado prendas que los mantienen abrigados durante los inviernos fríos y frescos durante los veranos más cálidos.</p>
+            <p>En las regiones más altas y frías, como las cumbres de las montañas y la capital Do Shoi, las prendas de invierno son esenciales para enfrentar las bajas temperaturas. Se usan prendas interiores de lana que ayudan a retener el calor corporal, y encima se visten con túnicas y pantalones gruesos, también de lana, que brindan una capa adicional de aislamiento. Los abrigos de piel de animales locales, como el lince o la marta, se usan sobre la ropa para protegerse del frío viento de las montañas.</p>
+            <p>En las zonas más bajas y cálidas, como las áreas de transición y los valles, la ropa de verano es más ligera y cómoda. Las túnicas de algodón o lino son comunes, permitiendo la circulación del aire y manteniendo a las personas frescas. En las zonas rurales, los habitantes suelen llevar faldas y camisas sueltas.</p>
+            <p>En general, la demanda de algodón es alta y los mercaderes se ocupan de traerlo de las islas de Alderion.</p>
+            <p>Para ocasiones festivas, ceremonias religiosas o eventos importantes, las túnicas y vestidos suelen estar adornados con bordados intrincados que representan símbolos animistas, motivos de dragones o elementos naturales. Los colores brillantes y los tejidos de mayor calidad, como la seda, son más comunes en estas prendas especiales.</p>
+            <p>Los sombreros y capuchas son esenciales para protegerse del sol y el viento en diferentes estaciones. En las áreas rurales, los habitantes usan bufandas tejidas a mano y calcetines de lana para mantener sus extremidades calientes en los meses fríos.</p>
+            <p>En las montañas y áreas más frías, se usan botas de cuero resistentes con suelas gruesas para mantener los pies calientes y protegidos. En las zonas más cálidas, las sandalias o zapatos de cuero son más comunes.</p>
+
+            <h3 class="subtitle">Gastronomía</h3>
+            <p>El arroz es el principal ingrediente en la gastronomía tibereña. Se cultivan más de quinientas variedades. La mayoría de las veces se come en sopa y se acompaña con carnes rojas de ñu y huevos.</p>
+            <p>La carne de ñu es la más cara, aunque también es bastante seca. El pollo es la opción más barata. Comen carne de gato y de perro sin problemas. Los pescados son todos de río o de lago.</p>
+            <p>En cuanto a las frutas, las más comunes hacen referencia a su animal sagrado: el ojo de dragón “Kiu Long” es del tamaño de una cereza, cubierta por una gruesa capa kaki que se mordisquea para retirar y comer el interior del color del cristal. La fruta del dragón “Hai Long” es más grande, del tamaño de un mango, rosa por fuera y blanca por dentro con pepitas negras diminutas como las de un kiwi. Hay otras frutas codiciadas como el carambolo, el lichi, el rambután o el tamarindo.</p>
+            <p>Las verduras y tubérculos más comunes son el taro, una especie de patata que se suele cocer. Las berenjenas también se comen bastante.</p>
+            <p>En cuanto a especias, suelen hacer distintos curris y usan hierbalimón en casi todos sus platos.</p>
+            <p>Si hablamos de bebidas típicas de la región la preferida es el shalur, que no es otra cosa que licor de arroz. Muy fuerte. La cerveza también se hace a base de arroz y cuando llega el frío, o en altitud, se suelen preparar vinos especiados humeantes, a menudo con canela.</p>
+
+            <h3 class="subtitle">Transporte</h3>
+            <p>Lo más común es ir a caballo o en burro. Para desplazamientos largos o pesados, y sobre todo oficiales, se usa sin embargo a los dragones de carga o de transporte. Las embarcaciones de los ríos, por lo escueto de estos, suelen ser meras piraguas de tamaño variable, solo que los transportistas reman con los pies.</p>
+
+            <h3 class="subtitle">Grandes Casas</h3>
+            <p>Las Casas nobles del Khaz’Tiber se hicieron por sí mismas. Al principio eran todos iguales ante el Khaz Dolu, pero algunas familias lograron hacerse un hueco cerca del poder. ¿Cómo? El primer Maestro del Fuego lo fue porque dicho elemento no le afectaba y era capaz de controlarlo. El primer Maestro de los Secretos lo fue porque era secretista. Estos dones o secretos fueron bien guardados y siguieron heredándose en muy pocas familias. Los jinetes de dragón, gracias a sus hazañas, también adquirían fama y respeto y su cargo les daba una posición más alta en la sociedad.</p>
+
+            <h3 class="subtitle">Otros</h3>
+            <p>Desde que nacieron los dragones de los huevos de Pondara, el marfil, la garra y las lágrimas de dragón fueron elementos que enseguida se vendieron a unos precios desorbitados en el extranjero (pues está prohibido comprarlos en el Tiber). Perseguidos por los cuerpos armados del Estado, los bandoleros se organizaron y crearon un cuerpo unido, en rebeldía abierta contra el Khaz Dolu y el gremio de los Jinetes de Dragón. Se esconden en las montañas blancas, a gran altura, y bajan a las zonas de descanso, las aldeas-etapa, para arrancar garras y serrar cuernos. Usan somníferos de contrabando que adquieren de los herboristas de los Mil Reinos y Alderion. Se llaman a sí mismos agarradores.</p>
+
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        </section>
+        <section id="cultura" class="tabcontent">
+        <h1 class="title center">Cultura</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <h3 class="subtitle">Tradiciones</h3>
+            <p>Los tibereños fueron el resultado de varias olas de migración, de personas que huían de la violencia que asolaba el continente, de modo que sus tradiciones son muy variadas y provienen de lugares muy distintos.</p>
+            <p>Una de las tradiciones más extendidas es la de las piedras de ánimo. Cuando alguien enferma o muere, los vecinos, amigos y familiares vienen a dejar piedras de ánimo al enfermo. En las piedras suelen tallar algún símbolo o mensaje. No se sabe de dónde viene esta tradición, pero sí sus razones. En caso de ser una enfermedad, las piedras sirven para mantener el alma de la víctima en este mundo y ayudar a que no se escape. En caso de muerte, las piedras son más duraderas que las flores, y sirven para conservar la memoria.</p>
+            <p>Otra tradición, sobre todo entre los guerreros pero también en las familias, es la de dejar a los ancianos el sitio más elevado.</p>
+            <p>La tradición de quemar objetos de tela o de madera en las pequeñas casas es la forma de enviar ofrendas a sus antepasados muertos. El objeto debe ir acorde a la época en la que vivió el difunto.</p>
+
+            <h3 class="subtitle">Arte</h3>
+            <p>Los trabajos en vidrio son los más valorados. Suelen ser estatuillas o representaciones de dragones, lámparas o botellas, o figuras dentro de botellas. También se trabajan las gemas o piedras preciosas que se encuentran en las minas del Fan Si Fana.</p>
+            <p>La música folclórica se distingue en dos tipos: “bac” para la música alegre y “nam” para la música triste. Cada una tiene sus propios instrumentos y son raros los que se usan en los dos géneros. La mayoría de los espectáculos están acompañados por esta música, y en general la gente acude a los famosos espectáculos de agua, donde se representan obras con figuras de madera.</p>
+
+            <h3 class="subtitle">Ciencia</h3>
+            <p>El Khaz’Tiber no cuenta con una Universidad, sin embargo, algunos hijos seleccionados en una prueba específica son enviados a estudiar a la Casa Docta de Alderion mediante un acuerdo por el que varios dirigentes obtuvieron espadas de garra de dragón siglos atrás. Recientemente se hizo lo mismo con Mohad y la ciudad de Val’Fleus a cambio de una sola espada de garra de dragón para el gobernante Cédric Val’Dore, el abuelo de Paul Val’Dore. Se dice que este la escondió para no cederla a su hijo, con quien se llevaba mal.</p>
+            <p>En el Tiber, las enseñanzas son más bien prácticas o espirituales. La medicina tradicional es el campo que más se investiga, mientras que del lado religioso se encarga el Maestro de los Secretos en su retiro, con sus discípulos, y nadie sabe muy bien lo que se hace.</p>
+
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        </section>
+        <section id="religion" class="tabcontent">
+        <h1 class="title center">Religión</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <h3 class="subtitle">Ausencia Limerea</h3>
+            <p>Las Cruzadas jamás llegaron a influir en el Khaz’Tiber. En cuanto la llegada de los misioneros limereos se convirtió en un problema a ojos del Khaz Dolu, todos aquellos que no se retractaron ni se postraron ante los Apos conocieron el castigo del fuego, más comúnmente llamado beso del dragón.</p>
+
+            <h3 class="subtitle">Animismo y Apos</h3>
+            <p>El Tiber siempre ha conservado su tradición animista, aunque admiten la existencia de un Dios creador y algunos conozcan las escrituras del Jorol. Los primeros pobladores renunciaron voluntariamente a la religión originaria, la jorolita, pues el Origen era imposible de explicar sin la palabra “Guerra”, que no existía en el Khaaz antiguo.</p>
+            <p>Los Apos son las montañas que protegen y ayudan al pueblo, y aunque no se comunican con él, sí lo escuchan y atienden a sus peticiones mediante rituales y sacrificios. Cuanto más arriba se hacía el sacrificio, más posibilidades tenían de ser escuchados. Pero cuanto más alta era la montaña, mayor tenía que ser el sacrificio para que el Apo escuchara.</p>
+
+            <h3 class="subtitle">Muerte</h3>
+            <p>Al igual que con el Orígen, los primeros pobladores reconstruyeron el relato de la muerte. Para los animistas del Tiber, la montaña es el árbitro a quien hay que llevar los huesos de los difuntos. Por eso cavan agujeros en la propia montaña para guardar a familias enteras juntas. Dos cementerios, el del primer paso y el del descanso eterno, donde se trasladan los huesos cuando el alma ya se ha desatado del plano existencial al plano de los Apos.</p>
+            <p>Por eso tienen casas pequeñas en los jardines de sus casas, para enviar ofrendas a sus antepasados mediante la quema de objetos de tela o de madera que representan bienes, comida o mensajes.</p>
+
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        </section>
+
+        <section id="geografia" class="tabcontent">
+        <h1 class="title center">Ecosistema y Geografía</h1>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+            <h3 class="subtitle">Ecosistema</h3>
+            <p>El clima tibereño tiene dos facetas: en la montaña es inclemente, y el cielo está a menudo encapotado. Mientras que en las faldas y los campos se trata de un tiempo fresco y cambiante.</p>
+
+            <h3 class="subtitle">Fauna y flora</h3>
+            <p>La variada geografía del Khaz'Tiber ha dado lugar a una rica diversidad de fauna y flora en diferentes altitudes y climas. Desde los valles hasta las alturas de las montañas, la flora tibereña muestra una adaptación sorprendente a las condiciones cambiantes.</p>
+            <p>En las áreas más bajas y fértiles, donde los ríos serpentean a través de la tierra y el clima es más templado, crece una exuberante vegetación. Bosques de robles y pinos proporcionan sombra y refugio a diversas especies de aves y mamíferos. En las orillas de los ríos y lagos, se pueden encontrar juncos y cañas que brindan refugio a peces y aves acuáticas. Los campos verdes se extienden con cultivos de arroz, mientras que plantas como el taro y las berenjenas prosperan.</p>
+            <p>Mamíferos como los ñus, ciervos y jabalíes se alimentan de los pastos y cultivos que crecen en estos valles. Aves como las perdices y faisanes son comunes, así como los patos y las garzas que se congregan en los ríos y lagos. Los depredadores como los lobos y zorros acechan en busca de presas más pequeñas.</p>
+            <p>A medida que se asciende en altitud, los bosques de coníferas se vuelven más densos y dominan el paisaje. Abetos, cedros y abedules son comunes en estas zonas. Los arbustos de bayas crecen en abundancia, proporcionando alimento para la fauna local y, a veces, para las poblaciones humanas. En primavera, estas áreas se cubren de flores silvestres de colores vibrantes, incluyendo tulipanes montanos, rododendros y flores de iris.</p>
+            <p>A medida que se asciende en altitud, la fauna cambia para adaptarse a los bosques de coníferas y terrenos más montañosos. Los linces y zorros continúan siendo comunes, mientras que los jabalíes son reemplazados por cabras montesas y rebecos. Los depredadores como los lobos también se encuentran en estas áreas. En los bosques, se pueden encontrar ardillas y martas, que se desplazan hábilmente entre los árboles.</p>
+            <p>A medida que se alcanzan altitudes más elevadas, la vegetación se vuelve más escasa debido a las condiciones climáticas extremas. Sin embargo, aquí es donde se encuentran plantas resistentes y adaptadas a la tundra tibereña. Pequeñas flores, como las edelweiss y las flores de alpinia, emergen entre las rocas y la nieve, agregando toques de color en este paisaje dominado por tonos fríos y grises.</p>
+            <p>Los pajarillos alpinos, como los gorriones de las nieves, se posan en las rocas y arbustos bajos. Los pequeños mamíferos, como los pikas, retozan entre las grietas de las rocas. Los búhos nivales cazan de noche, aprovechando las oportunidades para atrapar a sus presas. En los lagos más altos se puede pescar la globotrucha, una especie de trucha redondeada que solo se encuentra en el Tiber.</p>
+            <p>En las regiones de transición entre los bosques y las zonas alpinas, crecen arbustos y árboles enanos. En estas áreas, los bosques de coníferas ceden paso a árboles más pequeños, como el enebro y el pino rastrero. La vegetación aquí es resistente a los vientos fuertes y las temperaturas frías, y ofrece alimento a herbívoros como los ñus que tiran de las yuntas en los campos de cultivo.</p>
+            <p>Los ñus tienen una gran importancia en la vida tibereña. Estos animales de tiro, entrenados para arar los campos, se encuentran en las áreas de transición entre los bosques y los campos de cultivo. También son una fuente valiosa de alimento.</p>
+            <p>La riqueza de la flora del Khaz'Tiber también se refleja en su uso medicinal y aromático. Muchas plantas nativas se han convertido en ingredientes clave para las prácticas de curación tradicionales. Hierbas como la hierbalimón se utilizan en infusiones y cataplasmas para aliviar dolores y tratar enfermedades menores. Además, algunas plantas aromáticas se utilizan en rituales religiosos y ceremonias de conexión con los Apos.</p>
+            <p>Los dragones son la criatura más emblemática y sagrada del Khaz'Tiber. Criados por los jinetes de dragón o el gremio de transportistas, estas majestuosas bestias se convierten en compañeros leales y protectores. Además de los dragones, hay leyendas de otras criaturas míticas que acechan en las profundidades de los bosques o en las cimas de las montañas. Estas historias a menudo se entrelazan con las creencias religiosas y el folclore de la región.</p>
+
+            <h3 class="subtitle">Geología</h3>
+            <p>La orografía es difícil por lo abrupto de los suelos. Casi todas las aldeas están en zonas con cuestas. La cordillera tiene pocas zonas llanas y los valles son muy estrechos. A los pies de las montañas empieza un terreno mucho más plano que se extiende hacia el mar, hasta la Rada Blanca, pero esa zona pertenece en su mayoría a Dareniel.</p>
+
+
+            <h3 class="subtitle">Ciudades</h3>
+            <p><strong>Do Shoi</strong></p>
+            <p>La capital del Khaz’Tiber es una ciudad bulliciosa, pues es la única ciudad y con muchísima diferencia la más poblada. Reúne a más de la mitad de la población del país. Está encajonada en un valle entre los montes bajos, y dos pequeños ríos la atraviesan formando una cruz. Los primeros pobladores pensaron que allí era el sitio indicado, como marcado por una cruz en un mapa. El centro de la ciudad lo ocupa el puente redondo, que es una gigantesca rotonda sobre el cruce de los dos ríos, donde se alza la estatua de Darwen Ojorrojo, el creador del Gremio de los Jinetes de Dragón.</p>
+            <p>Hoy en día las arterías principales están asfaltadas, y todas las fachadas son altas y estrechas y de distinto color, con un conjunto de tejados hechos para echar el agua en lugares estratégicos y llevarla a los ríos.</p>
+            <p>En Do Shoi se encuentra el Palacio Dorado, residencia del máximo gobernador del Tiber, el Khaz Dolu. En realidad la mayoría de los adornos son de pirita, el falso oro, pero poco a poco se han ido reemplazando por oro verdadero. Está en la zona más alta de la ciudad, desde donde se atisban casi todas las calles. El pasillo de la Gloria es donde están retratados todos los mejores jinetes a lomos de sus dragones.</p>
+
+            <p><strong>Ka Luh</strong></p>
+            <p>Ka Luh es una ciudad ubicada en las estribaciones de las montañas del Khaz'Tiber, rodeada de bosques de pinos y robles. A diferencia de Do Shoi, Ka Luh es conocida por su ambiente tranquilo y su conexión con la naturaleza. Sus calles empedradas serpentean a través de la ciudad, bordeadas por casas de madera con tejados inclinados para permitir que la nieve se deslice fácilmente durante los inviernos fríos. La ciudad es famosa por sus talleres de artesanía en madera y vidrio, donde los hábiles artesanos crean objetos delicados y esculturas detalladas que reflejan la belleza natural que los rodea.</p>
+            <p>Ka Luh es también un centro de tradiciones espirituales y de curación. Los habitantes de la ciudad han mantenido antiguos rituales de conexión con los Apos y la montaña, realizando ceremonias en las áreas boscosas circundantes. La ciudad cuenta con varios templos y santuarios dedicados a los espíritus de la naturaleza y a los ancestros, donde los residentes llevan a cabo ofrendas y meditaciones.</p>
+
+            <p><strong>Va Lia</strong></p>
+            <p>Va Lia es una ciudad estratégicamente ubicada en la frontera del Khaz'Tiber, cerca de los límites de Dareniel. Debido a su posición geográfica, Va Lia ha sido un importante punto de paso para el comercio y el intercambio cultural entre las dos naciones. La ciudad está construida alrededor de un imponente castillo de piedra, que se alza en lo alto de una colina y ofrece una vista panorámica de los alrededores.</p>
+            <p>Va Lia es conocida por su diversidad y su ambiente cosmopolita. Las calles están llenas de mercados coloridos donde se venden productos exóticos tanto del Khaz'Tiber como de Dareniel y otras tierras más lejanas. La población de Va Lia es una mezcla de diferentes etnias y culturas, lo que se refleja en su arquitectura, gastronomía y tradiciones. Sus habitantes son comerciantes, viajeros y artesanos sobre todo. Además, gran parte del ejército tibereño está allí apostado.</p>
+
+            <p><strong>Ha Gian</strong></p>
+            <p>Ha Gian es una de las aldeas del Khaz'Tiber y, como muchas otras, presenta una atalaya y una torre del reloj. La mayoría de las viviendas son casonas donde cada familia tiene su propio negocio de artesanía o ganadería. El poblado emana un ambiente tradicional y comunitario, donde las actividades cotidianas están centradas en la colaboración y la interacción entre los habitantes. Alberga una importante mina. La torre del reloj suele marcar el ritmo de la vida diaria y actúa como un punto de referencia para la comunidad.</p>
+
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+        </section>
+        
+    </div>
+</div>
+        <hr>
+{% endblock %}

@@ -1,10 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base_articulo.html' %}
+{% load static %}
+
+
+{% block title %}
+    Otras Religiones - Enciclopedia
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/edalom/elements1.jpeg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/edalom/elements1.jpeg' %});
+    }
+    .justify {
+        text-align: justify;
+    }
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Otras Religiones</h1>
+        <i><p class="header-subtitle">A las preguntas sin respuesta se les suele dar muchas respuestas. Por esa razón en el continente se han desarrollado muchas otras religiones con particularidades propias de los distintos territorios. Las creencias de los habitantes del desierto pueden llegar a ser muy distintas que las de los habitantes de la jungla.</p></i>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+        <section id="origentiempo" class="justify">
+            <h1 class="title">Religión animista</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>La religión animista no busca la expansión, pero aun así es la más arraigada en los territorios de los Mil Reinos así como en las cumbres del Tiber, pues son los sitios de más difícil acceso para los misioneros limereos, que nunca llegaron a convencer en esos rincones. A Sahelia no le importó demasiado, puesto que allí tampoco había jorolitas, adeptos de la religión que pretendía erradicar. También algunas de las Cien Tribus de las Llanuras comparten creencias animistas, a pesar de haber vivido bajo el yugo del imperio Suna y la imposición de sus costumbres.</p>
+                <p>Los más fervientes creyentes suelen ser los que viven del campo y la naturaleza. Creen en los espíritus de las cosas y hacen ofrendas para no enfadarlos. Para ellos, existen espíritus buenos y malos, y según en qué sitio, creen que los espíritus del Mal han sido enterrados bajo el mar o bajo tierra, como en Colmillos Verdes, donde se dice que los gigantescos tepuis son en realidad estacas divinas usadas para ensartar y mantener a los espíritus malvados clavados en lo más hondo de la tierra.</p>
+                <p>El animismo del Khaz’Tiber es algo distinto, pues veneran a los dragones además de a los espíritus de los bosques o las montañas, los Apos, que los protegen. Sus rituales también difieren, sobre todo en lo concerniente a sus muertos. Suelen quemar objetos en sus chimeneas para enviarlos al Otro Lado, donde los muertos los pueden recibir.</p>
+               <br>
+
+            <h1 class="title">Necrofagismo</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>El necrofagismo no es una religión propiamente dicha, pues sus miembros son pocos y discretos. Tienen una jerarquía y autoridad establecida, de modo que podría ser considerada como una secta. Esta secta se ha desarrollado fruto del descubrimiento de una Ley Fundamental: comer a un ser humano muerto despierta a un demonio.</p>
+                <p>Según Hefaísto, el mayor estudioso del tema, toda persona que comiera carne humana se arriesgaba a padecer el trastorno. Empezaba con náuseas continuadas. Crónicas. Vómitos repentinos. Momentos de locura. De pérdida de control. Al principio, durante unos segundos. Pero a medida que el trastorno se agrava, la perdida de control se hace total, y el trastornado deja de ser dueño de sí mismo para dejar su cuerpo en manos del Otro.</p>
+                <p>El trastorno es lo que origina este movimiento religioso, que nace por la necesidad de un conjunto de víctimas en busca de una cura. Se reunían afín de estudiar el fenomeno, discutir de los metodos de minimizar las pérdidas de control o al menos limitar los estragos.</p>
+                <p>Cuando el Otro, o demonio, o alma oscura (no hay un término afianzado) toma el control, comete actos atroces por un tiempo indeterminado. El tiempo en que el trastornado tarda en volver en sí es muy variable, y su recuperación y pérdida de memoria también. Ante tal peligro, muchos de los que padecían este síndrome huían por sí mismos para no poner a sus seres queridos en riesgo, y los que no se alejaban solos eran alejados y marginalizados.</p>
+                <p>Tras siglos de estudio y experimentación en las grises tierras del sur, la secta descubrió formas de despertar al Otro voluntariamente mediante rituales completamente secretos. Incluso se dice que llegando a controlarlo en algunos casos. De hecho, si al principio era considerado como una maldición por todo el mundo, hubo quien acudió al necrofagismo voluntariamente, con el fin de obtener fuerza y poder.</p>
+                <p>Al cabo, el fenómeno se estudió y nació el término de "surcados". Un surcado es alguien cuyo cuerpo es habitualmente surcado por otra alma.</p>
+            <br>
+
+            <h1 class="title">Adeptos de la Luna</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>En tiempos ignotos cayó una enorme piedra blanca en las marismas de Mareas Rotas. Alguien, en otro tiempo, dio forma a esa piedra gigante y la convirtió en una tablilla blanca llena de símbolos.</p>
+                <p>Para los Adeptos de la Luna esa piedra gigante es un trozo de luna, y es responsable del comportamiento imprevisible de la marea en sus tierras. Si bien admiten la existencia de un Dios como Limeres, afirman que este es inferior al Tirano y a la Madre.</p>
+                <p>Acusan al sol de ser un Tirano que goza castigado a los humanos con incendios y sequías. Que la Madre, la luna, se esfuerza en protegerlos controlando el mar con sutileza. Afirman que al principio de los tiempos el Tirano le robó la luz, y que, cuando después se acercó pidiendo disculpas, la debilitó aún más causándole quemaduras. De ahí las ampollas de la luna.</p>
+                <p>Sus templos fueron construidos con la piedra del meteorito y su líder, el Sumo Teócrata, afirma saber usar esos trozos de luna para controlar el poder la marea.</p>
+            <br>
+
+            <h1 class="title">Seguidores de Seth</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>De entre los más antiguos nómadas del desierto figuran los seguidores de Seth. Cuenta la leyenda que un grupo de renegados que estaba al borde de la inanición tras caminar por entre dunas durante días vio a lo lejos a un hombre con cabeza de chacal. Al verlos, este les dijo que si lo seguían, él les enseñaría todas las transformaciones de la arena.</p>
+                <p>Se desconoce cuáles son sus rituales y, además, no tienen lugares de culto localizados. Se dice de ellos que vagan por el desierto, siguiendo a un hombre con cabeza de chacal, que comen y beben arena, y que por la noche adoptan la forma de espíritus malvados.</p>
+                <p>Están presentes en el folklore mohadí, pues la mayoría de las historias de miedo acaecen en el desierto y mencionan a los espíritus de la arena.</p>
+            <br>
+
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+
+    </div>
+</div>
+        <hr>
+{% endblock %}

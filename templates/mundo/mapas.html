@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Mapas - Mundo
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/header_mundo.jpg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/header_mundo.jpg' %});
+    }
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Mapas de Edalom</h1>
+        <i><p class="header-subtitle"> Estudia bien los mapas antes de adentrarte en territorio desconocido.</p></i>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+        
+        <style type="text/css">
+
+        #demo {
+          height:100%;
+          position:relative;
+          overflow:hidden;
+        }
+
+
+        .green{
+          background-color:#6fb936;
+        }
+                .thumb{
+                    margin-bottom: 30px;
+                }
+                
+                .page-top{
+                    margin-top:85px;
+                }
+
+           
+        img.zoom {
+            width: 100%;
+            border-radius:5px;
+            object-fit:cover;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+        }
+
+        img.hlimit {
+            height: 400px;
+        }
+                
+         
+        .transition {
+            -webkit-transform: scale(1.2); 
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+            .modal-header {
+           
+             border-bottom: none;
+        }
+            .modal-title {
+                color:#000;
+            }
+            .modal-footer{
+              display:none;  
+            }
+        </style>
+
+       <div class="row">
+            <div class="col-12 thumb">
+                <a href="{% static 'imgs/mapas/mapa.jpg' %}" class="fancybox" rel="ligthbox" data-caption="Edalom">
+                    <img  src="{% static 'imgs/mapas/mapa.jpg' %}" class="zoom img-fluid rounded"  alt="">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 thumb">
+                <a href="{% static 'imgs/mapas/noroeste.jpg' %}" class="fancybox" rel="ligthbox" data-caption="Noroeste">
+                    <img  src="{% static 'imgs/mapas/noroeste.jpg' %}" class="zoom img-fluid hlimit"  alt="">
+                </a>
+            </div>
+            <div class="col-6 thumb">
+                <a href="{% static 'imgs/mapas/mohad.jpg' %}" class="fancybox" rel="ligthbox" data-caption="Mohad">
+                    <img  src="{% static 'imgs/mapas/mohad.jpg' %}" class="zoom img-fluid hlimit"  alt="">
+                </a>
+            </div>
+            <div class="col-6 thumb">
+                <a href="{% static 'imgs/mapas/marcerrado.jpg' %}" class="fancybox" rel="ligthbox" data-caption="El Mar Cerrado">
+                    <img  src="{% static 'imgs/mapas/marcerrado.jpg' %}" class="zoom img-fluid hlimit"  alt="">
+                </a>
+            </div>
+            <div class="col-6 thumb">
+                <a href="{% static 'imgs/mapas/milreinos.jpg' %}" class="fancybox" rel="ligthbox" data-caption="Los Mil Reinos">
+                    <img  src="{% static 'imgs/mapas/milreinos.jpg' %}" class="zoom img-fluid hlimit"  alt="">
+                </a>
+            </div>
+            <div class="col-6 thumb">
+                <a href="{% static 'imgs/mapas/mareasrotas.jpg' %}" class="fancybox" rel="ligthbox" data-caption="Mareas Rotas">
+                    <img  src="{% static 'imgs/mapas/mareasrotas.jpg' %}" class="zoom img-fluid hlimit"  alt="">
+                </a>
+            </div>
+       </div>
+    </div>
+</div>    
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Contacto - Edalom
+{% endblock %}
+
+{% block header %}
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Contacto</h1>
+        <i><p class="header-subtitle">¿Quieres entrar en contacto? Abajo encontrarás mi email :)</p></i>
+        <div>
+            <br>
+            <i class="fa-solid fa-angles-down"></i>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container page-container">
+        <section id="contacto">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="img-fluid rounded-circle" src="{% static 'imgs/yo.jpg' %}">
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <p>Soy Alberto, tengo 27 años y me encantan los libros de fantasía.</p>
+                  <p>No soy escritor, ni mucho menos, pero hace poco decidí embarcarme en la aventura de escribir un libro y... bueno, en eso estamos... De momento, ya hay dos novelas y varios relatos. Mi objetivo es crear dos sagas de fantasía, una para un público joven (Gundolan) y otra para uno más adulto (Edalom).</p>
+                  <p>Mi verdadero trabajo es el de desarrollador, por eso decidí crear esta página por mi mismo (no soy desarrollador web). Si te gustan los libros, no dudes en poner una reseña en el sitio en el que lo hayas leído/comprado, que eso me ayudará un montón.</p>
+                  <p>Para cualquier cosa, puedes escribirme a <a href = "mailto: albiturralde@gmail.com">albiturralde@gmail.com</a></p>
+                  <p>Por cierto, si quieres estar al tanto de las novedades, suscríbete dejando tu email aquí abajo ;) </p>
+                  <p>¡Un saludo!</p>
+                </div>
+              </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

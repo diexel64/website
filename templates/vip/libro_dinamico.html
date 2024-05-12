@@ -1,31 +1,62 @@
 {% extends 'base_vip.html' %}
 {% load static %}
 
-
 {% block title %}
-    Espacio VIP - Edalom
+    Libro dinámico - Edalom
 {% endblock %}
 
-
 {% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/ld/alden0.jpg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/ld/alden0.jpg' %});
+    }
+    </style>
     <div class="overlay"></div>
     <div class="header-content">
         <h1 class="header-title">Libro Dinámico</h1>
         <i><p class="header-subtitle">Esta es la sección dedicada al libro dinámico del momento</p></i>
-        <i><p class="header-subtitle">El libro dinámico es mi sección preferida, porque aquí voy publicando un capítulo por semana de la historia que estoy escribiendo. Por un euro/dolar al mes, tendrás acceso a la historia antes que nadie. Cuando el libro dinámico esté terminado, y tras unos posibles retoques, srá publicado, y empezaré a escribir otro libro dinámico en esta sección.</p></i>
-        <!-- <button class="btn btn-theme-color modal-toggle"><i class="ti-control-play text-danger"></i> Watch Video</button> -->
+        <i><p class="header-subtitle">El libro dinámico es mi sección preferida, porque aquí voy publicando un capítulo por semana de la historia que estoy escribiendo. Por un euro/dolar al mes, tendrás acceso a la historia antes que nadie. Cuando el libro dinámico esté terminado, y tras unos posibles retoques, será publicado, y empezaré a escribir otro libro dinámico en esta sección.</p></i>
     </div>
-    <script src="{% static 'js/subtitleRandom.js' %}"></script>
 {% endblock %}
-
 
 {% block content %}
     <div class="container page-container">
-        <div class="col-md-10 col-lg-8 m-auto">
-            <h6 class="title mb-4">La Leyenda de Alden Debald</h6>
-            <p class="mb-5">Alden Debald nos narra su historia.</p>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>La Leyenda de Alden</h1>
+            </div>
         </div>
-    </div> 
-{% endblock %}
+        <hr>
 
+        <div class="row">
+            <div class="col-md-1">
+                <div class="nav flex-column nav-pills" id="chapterTabs" role="tablist" aria-orientation="vertical">
+                    {% for chapter_title in chapter_titles %}
+                        <a class="nav-link {% if forloop.first %}active{% endif %}" id="{{ chapter_title }}-tab" data-bs-toggle="pill" href="#{{ chapter_title }}" role="tab" aria-controls="{{ chapter_title }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">{{ chapter_title }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-11">
+                <div class="tab-content" id="chapterContent">
+                    {% for chapter_title in chapter_titles %}
+                        <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="{{ chapter_title }}" role="tabpanel" aria-labelledby="{{ chapter_title }}-tab">
+                            <div id="pdfViewer-{{ chapter_title }}">
+                                <embed src="{% static 'pdf/'|add:chapter_title|add:'.pdf' %}" type="application/pdf" width="100%" height="800px" />
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{% static 'js/chapterChangeLD.js' %}"></script>
+
+
+
+{% endblock %}
 

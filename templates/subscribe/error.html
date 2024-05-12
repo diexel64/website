@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base_vip.html' %}
+{% load static %}
+
+{% block title %}
+    Error en el pago - Edalom
+{% endblock %}
+
+{% block header %}
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Pago incompleto</h1>
+        <i><p class="header-subtitle">{{ error_message }}</p></i>
+        <a href="{% url 'mi_cuenta' %}">
+            <button class="btn btn-theme-color modal-toggle"></i>Mi Cuenta</button>
+        </a>
+
+    </div>
+{% endblock %}
+
+{% block content %}
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base_cuento.html' %}
+{% load static %}
+
+
+{% block title %}
+    El Ojo Azul - Cuentos de Edalom
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/cuentos/ojoazul.jpeg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/cuentos/ojoazul.jpeg' %});
+    }
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">El Ojo Azul</h1>
+        <i><p class="header-subtitle">El aspirante al trono del Norte envía a su hermano bastardo, Bror, a granjearse apoyos entre las tribus de las Estepas Savvajes.</p></i>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+        <section>
+        <div id="ojoazul">
+          <p>Escribiéndose</p>
+        </div>
+        </section>
+    </div>
+</div>
+        <hr>
+{% endblock %}

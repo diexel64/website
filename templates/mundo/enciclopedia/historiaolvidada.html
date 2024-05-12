@@ -1,10 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base_articulo.html' %}
+{% load static %}
+
+
+{% block title %}
+    Historia Olvidada - Enciclopedia
+{% endblock %}
+
+
+{% block header %}
+    <style>
+    .header {
+        background-image: url({% static 'imgs/edalom/origen.jpg' %});
+    }
+    body.light-theme .header {
+        background-image: url({% static 'imgs/edalom/origen.jpg' %});
+    }
+    .justify {
+        text-align: justify;
+    }
+    </style>
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1 class="header-title">Historia Olvidada</h1>
+        <i><p class="header-subtitle">Esta es la Historia Olvidada, recuperada de las entrañas del Templo de Kitazh por un traidor que eligio el camino de la verdad.</p></i>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container page-container">
+    <div class="col-md-12 blog-main">
+        <section id="origentiempo" class="justify">
+            <h1 class="title">La creación del tiempo</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>Cuando la Hermafrodita Terra dio a luz a los gemelos Akros y Limeres, decidió crear el Lienzo Vacío para que sus hijos se divirtieran. Les instruyó en el arte de la creación y cuando obtuvieron su beneplácito, empezaron a crear mundos como si no hubiera un mañana. Porque así era, no existía tal cosa como un “mañana”. Así comenzó una carrera desenfrenada por ver quién hacía el más bonito de todos los mundos, con el fin de complacer a su madre.</p>
+                <p>A medida que creaban y creaban, los mundos que llenaban el gran Lienzo Vacío se hacían más y más bonitos. Akros y Limeres aprendían de sus errores. Akros decidió concentrarse exclusivamente en un solo mundo en el que trabajó muy duro y se dedicó en cuerpo y alma. Ese mundo sería su obra maestra. Mientras tanto, Limeres siguió creando y creando y experimentando. Al cabo, viendo que el mundo en el que trabajaba Akros era mucho más bonito que cualquiera de los suyos, el hermano se quejó a la madre, alegando que él había creado muchos más mundos, pero que Akros solo jugaba con uno.</p>
+                <p>Fue entonces cuando Terra creó el tiempo, y les advirtió de que no podrían pasar más de un millón de años creando un mundo como regla general. Sendos hermanos aceptaron el trato antes de proseguir con la competición. Pero ya se había encendido la mecha de las disputas.</p>
+                <br>
+
+            <h1 class="title">La Perla de Akros</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>Ese mundo que había creado Akros dedicándose en cuerpo y alma, ese que había suscitado la envidia de su hermano gemelo, era de una belleza extraordinaria. Decidió nombrarlo “Perla”. Arrugó la tierra para crear montañas y cavidades que posteriormente llenaría del líquido necesario para la vida, que llamó agua. Sembró árboles en los bosques, pobló las tierras de criaturas y los mares de peces de todos los tamaños. Al fin, pensando que faltaba algo que moldeara el mundo por sí solo cuando él ya no estuviera tras el millón de años acordado con su madre, creó a los humanos.</p>
+                <p>Este punto fue el que más disgustó a Limeres, su hermano gemelo. Las criaturas que habían creado los dioses hasta entonces no les rendían culto, mientras que la creación humana de Akros le rendía culto a él (y se olvidaba por completo de Limeres, que no era su dios).</p>
+                <p>Entonces, Limeres se entrometió en la creación de su hermano. Anteriormente Terra se había negado a enseñarles el poder de la destrucción, y tan solo les había instruido en crear. Por eso no podía destruir a los humanos de un plumazo, pero podía crear a seres que lo hicieran por él. Así creó a sus propias criaturas para intentar acabar con los humanos. Depredadores lo suficientemente poderosos como para extinguir a la raza humana. De hecho, se basó en las criaturas creadas por su hermano para darles forma: usó serpientes para crear hydras y basiliscos. Recurrió a fieros perros para crear a sus cerberos. Cabras y leones para sus quimeras. Llegó incluso a usar a los propios humanos en alguna de sus obras, como las que denominó “lamias”.</p>
+                <p>Asqueado, Akros no tuvo más remedio que otorgar ciertos secretos a los humanos, para que así pudieran sobrevivir a esas criaturas enviadas por su hermano a las que llamó “monstruos”. Ese fue el principio de una guerra indirecta entre los dioses hermanos.</p>
+                <br>
+
+            <h1 class="title">El Árbol Talado</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>Akros escondió allí algunos de sus secretos, en el Árbol del Origen. En su particular guerra, Limeres lo descubrió y lo taló, robando así los secretos de su hermano para crear otros mundos parecidos.</p>
+                <p>Antes de ponerlo en práctica y crear otros mundos, Limeres decidió que crearía un nuevo continente en Perla, el mundo de Akros, más allá de los mares, para añadir a sus propios seguidores. Creó otros tres continentes en los que probó los secretos guardados en el Árbol Talado.</p>
+                <p>Esta acción fue recurrida por Akros mucho tiempo más tarde y fue objeto del famoso Juicio de los Dioses, pues hay reglas hasta en la guerra divina.</p>
+                <br>
+
+            <h1 class="title">Las Guardianas y sus hijos</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>Cuando el millón de años estaba a la vuelta de la esquina, la guerra entre humanos y monstruos proseguía y no daba señales de que fuera a terminar pronto. Valorando las opciones, Akros cedió el secreto de los elementos a cinco mujeres que consideró adecuadas por razones que solo él conoce. Ellas se encargaron de luchar y encerrar a las más peligrosas de las criaturas traídas por Limeres para exterminar a los humanos. De hecho, las guardianas de los cinco elementos también ayudaron a Akros con alguna de sus creaciones. Por ejemplo, creó a los dragones con la ayuda de Beane Borea, guardiana del aire, e Ileria Ignos, guardiana del fuego.</p>
+                <p>Cuando acabó la guerra, el mundo conoció la paz por primera vez. Le gustó la paz a nuestro dios, y por eso quiso asegurarse de que el secreto permaneciera siendo un secreto, pero sin perderse del todo, por si algún día la guerra volvía. Con tal deseo se acostó con las guardianas, plantando la simiente de lo que serían los heterocromos. Con todas salvo con una, Kida Katay.</p>
+                <br>
+
+            <h1 class="title">La Guerra de los Eternos</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>Según las escrituras, Kida Katay era quien estaba más enamorada de Akros, pero él la dejó para el final. Al enterarse de que se había acostado con las otras cuatro mujeres, Kida rechazó a Akros. El rechazo no fue suficiente para colmar el odio que la invadía, de modo que se volvió en su contra. Se dice en el Joról que también dirigió su odio hacia las otras cuatro guardianas.</p>
+                <p>Ante tal oportunidad, Limeres se acercó a ella. Ambos pactaron para enfrentarse a su comúnmente odiado Akros. Limeres le propuso crear unas criaturas mucho más poderosas que los dragones, pero para eso debía fecundarla, cosa que Kida aceptó. Así nacieron los krouls. Kida dio a luz diez veces.</p>
+                <p>Akros, al ver que sus cuatro amantes, heridas en su orgullo y su corazón, no lo ayudaban a encadenar a esas criaturas, decidió recurrir a otros humanos. Así creó a los eternos de Kitazh. Ellos ayudaron a Akros a vencer a Kida Katay y encadenar a los krouls. En vez de matarla, Akros le perdonó la vida a cambio de que enterrara el secreto del rayo. Ella así lo hizo, pero no sin antes susurrárselo a una tribu de las Llanuras que la adorarían por siempre, aún sin saberlo: los Zulúr.</p>
+                <br>
+
+            <h1 class="title">El Juramento de Kitazh</h1>
+            <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+                <p>En su guerra contra Limeres y Kida Katay, Akros no recibió ayuda de las guardianas, pues a todas había sido infiel, olvidando que la fidelidad era uno de los valores más importantes para los humanos que él mismo había creado.</p>
+                <p>De modo que convocó a diez humanos a una asamblea en el Templo de Kitazh, otrora construido en su honor por los primeros humanos y él mismo. Le cedió un secreto a cada uno, además del de la eternidad que regaló a los diez, pues lo iban a necesitar para su posterior misión. Les hizo jurar que una vez la guerra terminada, no volverían a usar sus poderes, y que se encargarían de mantener el templo y formar allí a los feligreses en el camino de la rectitud. Dispuso que quien rompiera el juramento usando sus poderes después de la guerra, no podría volver a entrar en el templo de Kitazh y sufriría de una vida eterna sin sentido.</p>
+                <p>Antes de dejarlos, Akros les dijo que ya se le había acabado el tiempo en su “Perla”, y que no podría seguir interviniendo. Anunció de todos modos que usaría a los aprendices del templo para comunicarse con ellos y advertirles de futuros peligros. Esa era, decía, una forma sutil y discreta para que ni su madre ni Limeres se enteraran.</p>
+                <p>De ahí que cuando Harum les anunció que había tenido visiones y les había descrito a Akros, entendieron que estaban ante un uso de esa vía de comunicación. Grabaron sus sueños en siete tablillas de arcilla que posteriormente tallaron en piedra y guardaron en una cripta sellada.</p>
+                <p>Durante la era del caos, cuando el continente se alzó contra el yugo de los heterocromos, tres eternos decidieron romper su juramento para ayudar a los rebeldes. Sahelia se ocupó de manipular a las masas creando la religión limerea y reescribiendo la historia en el Libro de las Verdades. Las guardianas se convirtieron en destructoras y el Dios creador resultó ser Limeres, mientras que ni siquiera se nombraba a Akros (al fin y al cabo, Sahelia pensó que habría sido demasiado contra su propio creador). Humo y Ruto acudieron a las batallas usando su poder, y así ayudaron a aniquilar a líderes heterocromos de lo más poderosos, personas clave del régimen.</p>
+                <p>Los otros siete eternos se mantuvieron en sus asientos de Kitazh, observando como sus hermanos acababan con el control de los heterocromos y el continente se dividía en tierras gobernadas por humanos corrientes, la mayoría malvados.</p>
+                <br>
+
+        </section>
+        <h1 class="pb-3 mb-4 font-italic border-bottom"></h1>
+
+    </div>
+</div>
+        <hr>
+{% endblock %}

@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Página web de las Crónicas de Edalom">
+    <link rel="icon" href="{% static 'imgs/favicon.ico' %}">
+    <title>{% block title %}{% endblock %}</title>
+    <script src="{% static 'js/keepTheme.js' %}"></script>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+    <script src="https://kit.fontawesome.com/b649e4a44b.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap + Dorang main styles -->
+	<link rel="stylesheet" href="{% static 'css/dorang.css' %}">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
+    
+    <!-- page navbar -->
+    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+        <ul class="nav-navbar container">
+            <li class="nav-item"><a href="{% url 'inicio' %}" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="{% url 'libros' %}" class="nav-link">Libros</a></li>
+            <li class="nav-item"><a href="{% url 'cuentos' %}" class="nav-link">Cuentos</a></li>
+            <li class="nav-item"><a href="{% url 'mundo' %}" class="nav-link">Mundo</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Espacio VIP
+                </a>
+                <ul class="dropdown-menu container" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{% url 'mi_cuenta' %}">Mi Cuenta</a></li>
+                    <li><a class="dropdown-item" href="{% url 'libro_dinamico' %}">Libro Dinámico</a></li>
+                    <li><a class="dropdown-item" href="{% url 'logout' %}">Salir</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="{% url 'contacto' %}" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav><!-- end of page navbar -->
+
+
+    <div class="theme-selector">
+        <a href="javascript:void(0)" class="spinner">
+            <i class="ti-paint-bucket"></i>
+        </a>
+        <div class="body">
+            <a href="javascript:void(0)" class="light"></a>
+            <a href="javascript:void(0)" class="dark"></a>
+        </div>
+    </div>  
+
+    <!-- page header -->
+    <header class="header">
+        {% block header %}{% endblock %}
+    </header><!-- end of page header -->
+
+    <!-- page container -->
+    {% block content %}{% endblock %}
+    <!-- end of page container -->
+
+    <!--footer & pre footer -->
+    <div class="contact-section">
+        <div class="overlay"></div>
+        <!-- container -->
+        <div class="container">
+            <!-- footer -->
+            <footer class="footer">
+                <p class="infos">&copy; <script>document.write(new Date().getFullYear())</script> Crónicas de Edalom.</a></p>
+            </footer><!-- end of footer -->
+        </div><!-- end of container -->
+    </div><!-- end of pre footer -->
+
+    <!-- core  -->
+    <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+    <!-- bootstrap affix -->
+    <script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
+    <!-- Dorang js -->
+    <script src="{% static 'js/dorang.js' %}"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+
+</body>
+</html>
